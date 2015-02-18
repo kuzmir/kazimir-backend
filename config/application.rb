@@ -18,10 +18,15 @@ module KazimirApp
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    # config.i18n.default_locale = :de
+    config.i18n.default_locale = :pl
+    config.i18n.available_locales = [:pl, :en]
 
     config.generators do |g|
       g.test_framework :minitest, spec: false, fixture: false
+
+      g.assets = false
+      g.helper = false
+
     end
 
     # Do not swallow errors in after_commit/after_rollback callbacks.

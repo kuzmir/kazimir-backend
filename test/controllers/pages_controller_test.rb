@@ -5,6 +5,9 @@ class PagesControllerTest < ActionController::TestCase
   def test_should_get_index
     get :index
     assert_response :success
+
+    assert_select '.navbar-brand'
+
   end
 
 end

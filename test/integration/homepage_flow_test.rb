@@ -7,8 +7,10 @@ class HomepageFlowTest < ActionDispatch::IntegrationTest
     get root_path
     assert_response :success
 
-    # should find .hero element
-    assert_select ".hero"
+    # should find .hero element with H1 element
+    assert_select ".hero" do
+      assert_select "h1"
+    end
 
   end
 

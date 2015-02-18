@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: KazimirApp_production
-  username: KazimirApp
-  password: <%= ENV['KAZIMIRAPP_DATABASE_PASSWORD'] %>
+  # username: root
+  # password: <%= ENV['KAZIMIRAPP_DATABASE_PASSWORD'] %>

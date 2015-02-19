@@ -1,0 +1,31 @@
+%div.page-header
+  %h1 Streets
+
+%div.page-content
+
+  %table.table
+    %thead
+      %tr
+        %th id
+        %th name
+        %th description
+        %th active
+        %th updated at
+        %th actions
+
+    %tbody
+      - if @streets.size > 0
+        - @streets.each do |street|
+          %tr
+            %td= street.id
+            %td= street.name
+            %td
+              = street.description
+            %td= street.active
+            %td= street.updated_at
+      - else
+        %tr
+          %td{colspan: 6}
+            %p
+              No streets found in the database, yet.
+              = link_to "Create first street now!", new_admin_street_path, class: 'btn btn-primary'

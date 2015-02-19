@@ -2,7 +2,7 @@ require "test_helper"
 
 class AdminFlowTest < ActionDispatch::IntegrationTest
 
-  def test_admin_flow
+  def test_admin_unauthorized_flow
 
     get admin_root_path
     assert_response 401
@@ -13,5 +13,7 @@ class AdminFlowTest < ActionDispatch::IntegrationTest
     # assert_response :success
 
   end
+
+
 
 end

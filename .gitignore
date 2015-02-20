@@ -6,8 +6,20 @@
 
 # Ignore bundler config.
 /.bundle
+/.capistrano
+
+/.DS_Store
 
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
 /tmp
+
+# ignore some config files
+
+/config/datbase.yml
+/config/secrets.yml
+
+/config/deploy.rb
+/config/deploy/production.rb
+/config/deploy/staging.rb

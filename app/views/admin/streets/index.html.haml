@@ -23,6 +23,9 @@
               = street.description
             %td= street.active
             %td= street.updated_at
+            %td
+              = link_to "edit", edit_admin_street_path(street), class: 'btn btn-default btn-sm'
+              = link_to "delete", admin_street_path(street), method: 'delete', class: 'btn btn-sm btn-danger', data: {confirm: "Are you sure to delete?"}
       - else
         %tr
           %td{colspan: 6}

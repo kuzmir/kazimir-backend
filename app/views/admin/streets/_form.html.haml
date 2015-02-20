@@ -1,20 +1,7 @@
-= form_for([:admin, street]) do |f|
+= simple_form_for([:admin, street]) do |f|
 
-  %div.form-group
-    = f.label :name
-    = f.text_field :name, class: 'form-control'
+  = f.input :name
+  = f.input :description
+  = f.input :past_description
 
-  %div.form-group
-    = f.label :description
-    = f.text_area :description, class: 'form-control'
-
-  %div.form-group
-    = f.label :past_description
-    = f.text_area :past_description, class: 'form-control'
-
-  %div.form-actions
-    = f.submit class: 'btn btn-primary' do
-      - if street.new_object?
-        Create street
-      - else
-        Update
+  = f.button :submit

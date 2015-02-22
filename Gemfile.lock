@@ -240,7 +240,7 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rvm
   coffee-rails (~> 4.1.0)
-  font-awesome-sass
+  font-awesome-sass (~> 4.3.0)
   haml-rails (~> 0.8)
   jbuilder (~> 2.0)
   jquery-rails

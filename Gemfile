@@ -40,7 +40,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Build markup independend forms with https://github.com/plataformatec/simple_form
 gem 'simple_form'
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 4.3.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

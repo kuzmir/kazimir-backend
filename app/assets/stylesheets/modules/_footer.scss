@@ -1,8 +1,35 @@
 #footer{
 	bottom: 0;
 	left: 0;
-	padding: 0 4em 6em 0;
+	padding: 0 1em 1em 0;
 	position: fixed;
 	text-align: right;
 	width: 35%;
+	.icons {
+		margin: 1em 0 0 0;
+		li {
+			display: inline-block;
+			padding: 0 1em 0 0;
+		}
+		a {
+			color: rgba(255, 255, 255, 0.4);
+			font-size: 20px;
+			&:hover {
+				border-bottom-color: transparent;
+				color: #49BF53;
+				text-decoration: none;
+			}
+		}
+	}
+	.copyright {
+		li {
+			padding: 1em 1em 0 0;
+		}
+	}
+}
+ul.icons,
+ul.copyright {
+	cursor: default;
+	list-style: none;
+	padding-left: 0;
 }

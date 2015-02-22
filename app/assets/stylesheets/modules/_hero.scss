@@ -18,6 +18,21 @@
 .logotyp-content {
 	padding-top: 30px;
 }
+.link-image {
+	img {
+		width: 100%;
+		border-radius: 0.35em;
+		display: block;
+	}
+	a {
+		&:hover {
+			img {
+				opacity: 0.8;
+			}
+			
+		}
+	}
+}
 .section-title {
 	text-transform: uppercase;
 	padding: 20px 0;

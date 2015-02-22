@@ -26,6 +26,12 @@
 			background-color: #0aafdd;
 		}
 	}
+	@media(max-width: 992px) {
+		margin: 0 auto;
+	}
+	@media(max-width: 768px) {
+		display: none;
+	}
 }
 
 .flipper {
@@ -35,12 +41,12 @@
 }
 
 .front, .back {
-	width: 190px;
+	width: 189px;
 	height: 375px;
 	backface-visibility: hidden;
 	position: absolute;
 	top: 55px;
-	left: 15px;
+	left: 16px;
 }
 .front {
 	z-index: 2;

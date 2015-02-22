@@ -10,6 +10,17 @@
 			padding-top: 10px;
 		}
 	}
+	@media(max-width: 992px) {
+		margin: 0;
+		padding: 6em 4em;
+		width: 100%;
+	}
+	@media(max-width: 992px) {
+		padding: 1em;
+		.row {
+			margin: 0;
+		}
+	}
 }
 .content-section {
 	padding-bottom: 8%;
@@ -19,6 +30,7 @@
 	padding-top: 30px;
 }
 .link-image {
+	padding: 10px;
 	img {
 		width: 100%;
 		border-radius: 0.35em;

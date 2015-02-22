@@ -1,12 +1,8 @@
-/ %header.site-header
-/   %div.navbar.navbar-default.navbar-static-top
-/     %div.container
-/       %div.navbar-header
-/         = link_to root_path, class: 'navbar-brand' do
-/           Kazimir
-
-/       %div#nav-collapse.collapse.navbar-collapse
-/         %ul.nav.navbar-nav.left
-/           %li= link_to "About us", static_page_path(:about)
 %header#header
- 
+  .flip-container#flip-toggle
+    .flipper
+      .front
+        = image_tag "screen_new_bezswitcha.png"
+      .back
+        = image_tag "screen_old_bezswitcha.png"
+    %button.toggleButton{:onclick => "document.querySelector('#flip-toggle').classList.toggle('hover');"}

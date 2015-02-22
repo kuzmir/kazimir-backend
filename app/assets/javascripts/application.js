@@ -3,3 +3,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+$('.toggleButton').click(function(){
+	console.log('click');
+});

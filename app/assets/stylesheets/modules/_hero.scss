@@ -23,12 +23,10 @@
 	}
 }
 .content-section {
-	padding-bottom: 8%;
+	padding-bottom: 3%;
 	border-bottom: 1px solid #eee;
 }
-.logotyp-content {
-	padding-top: 30px;
-}
+
 .link-image {
 	padding: 10px;
 	img {
@@ -44,28 +42,36 @@
 			
 		}
 	}
+	.link-subtitle {
+		padding: 10px 0;
+	}
 }
 .section-title {
 	text-transform: uppercase;
-	padding: 20px 0;
+	padding: 30px 0 5px 0;
 }
 .contact-form {
 	padding-top: 10px;
+	margin: 0 0 10px;
 }
 .email-input,
 .submit-btn {	
-	min-height: 30px;
+	min-height: 36px;
 	border-radius: 3px;	
+	vertical-align: top;
 }
 .email-input {	
-	width: 40%;
+	width: 43%;
 	border: 1px solid #eee;
+
 }
 .submit-btn {
 	width: 15%;
 	border: none;
 	text-transform: uppercase;
-	color: #747474;
+	color: #fff;
+	background-color: #6cb949;
 	font-size: 11px;
-	vertical-align: top;
+	
+	margin-left: 6px;
 }

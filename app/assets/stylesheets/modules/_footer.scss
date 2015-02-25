@@ -1,5 +1,51 @@
-.site-footer{
-  margin-top: 50px;
-  border-top: 1px solid #eee;
-  padding-top: 20px;
+#footer{
+	bottom: 0;
+	left: 0;
+	padding: 0 1em 1em 0;
+	position: fixed;
+	text-align: right;
+	width: 35%;
+	.icons {
+		margin: 1em 0 0 0;
+		li {
+			display: inline-block;
+			padding: 0 1em 0 0;
+		}
+		a {
+			color: rgba(255, 255, 255, 0.4);
+			font-size: 20px;
+			&:hover {
+				border-bottom-color: transparent;
+				color: #222;
+				text-decoration: none;
+			}
+		}
+	}
+	.copyright {
+		li {
+			padding: 1em 1em 0 0;
+			font-size: 12px;
+			color: rgba(255, 255, 255, 0.4);
+		}
+	}
+	@media(max-width: 992px) {
+		background-attachment: scroll;
+		background-color: #1f1815;
+		background-image: url("gradient.png"), url("bg-image1.jpg");
+		background-position: top left,	bottom center;
+		background-repeat: repeat,	no-repeat;
+		background-size: auto,	cover;
+		bottom: auto;
+		left: auto;
+		padding: 1em 4em;
+		position: relative;
+		text-align: center;
+		width: 100%;
+	}
+}
+ul.icons,
+ul.copyright {
+	cursor: default;
+	list-style: none;
+	padding-left: 0;
 }

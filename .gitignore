@@ -17,7 +17,7 @@
 
 # ignore some config files
 
-/config/datbase.yml
+/config/database.yml
 /config/secrets.yml
 
 /config/deploy.rb

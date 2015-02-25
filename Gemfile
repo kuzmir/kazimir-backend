@@ -12,6 +12,7 @@ gem 'mysql2'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
+gem 'font-awesome-sass', '~> 4.3.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -43,6 +44,7 @@ gem 'simple_form'
 
 # Managing env variables with figaro: https://github.com/laserlemon/figaro
 gem 'figaro'
+
 
 
 group :development do

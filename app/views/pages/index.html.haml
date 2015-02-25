@@ -1,4 +1,41 @@
-%div.hero
-  %h1 Welcome to KazimirApp
-  %p.lead
-    This is some initial content
+%section.content-section
+  %header.major
+    = image_tag "kazimir_logo.png" 
+    %p.subtitle
+      Opowieść o dwóch kulturach na krakowskim Kazimierzu.
+    %br/
+  
+  %p Przewodnik KAZIMIR daje Ci możliwość szczegółowego poznania historycznej żydowskiej dzielnicy Krakowa. Zwiedzanie z aplikacją pozwoli Ci spojrzeć na Kazimierz z innej perspektywy, nie tylko z czysto historycznej czy konsumenckiej. Odkryjesz nieistniejące już miejsca związane z żydowską przeszłością; poznasz istotne zdarzenia, legendy, osoby, które ukształtowały świadomość mieszkańców Krakowa. Jednocześnie dowiesz się jak  się przeobraziły się wraz z upływem czasu.
+  %p.middle Jak tylko aplikacja (Android, iOS) będzie gotowa do ściągnięcia. 
+  %p Spodziewaj się wiadomości pod koniec maja 2015 ale bądź cierpliwa/y...:)
+  %form.contact-form.form-inline
+    %div.form-group
+      %input{:name => "user-email", :type => "email", :class => "email-input form-control", :placeholder => "Twój email"}/
+    %div.form-group
+      %input{:type => "submit", :value => "Wyślij", :class => "submit-btn"}/
+
+%section.content-section
+  %header.section-title
+    %h4
+      Projekt
+  %p Przewodnik KAZIMIR daje Ci możliwość szczegółowego poznania historycznej żydowskiej dzielnicy Krakowa. Zwiedzanie z aplikacją pozwoli Ci spojrzeć na Kazimierz z innej perspektywy, nie tylko z czysto historycznej czy konsumenckiej. Odkryjesz nieistniejące już miejsca związane z żydowską przeszłością; poznasz istotne zdarzenia, legendy, osoby, które ukształtowały świadomość mieszkańców Krakowa. Jednocześnie dowiesz się jak  się przeobraziły się wraz z upływem czasu.
+  %p Przewodnik jest próbą skłonienia Polaków aby spojrzeli na żydowski, przedwojenny Kazimierz jako na bardzo ważną część historii Krakowa (pomijając kontekst Holocaustu jako tematu eksplorowanego przez wiele lat). Stąd celowo wprowadzony zabieg odwrotnej nawigacji – część przedwojenna aplikacji obsługiwana jest od prawej do lewej, część powojenna od lewej do prawej. Daje to szansę choć w niewielkim stopniu posmakować kultury żydowskiej i poznać Kazimierz którego już nie znamy. Użytkownik choć przez chwilę, poprzez operowanie smartfonem, może poczuć obecność drugiego, nieznanego mu świata (dla Polaka: żydowskiego i ludzi posługujących się hebrajskim).
+  %p Celem jest wzbudzenie zainteresowania i chęci poznania innego, nieznanego oblicza miejsca w odbiorcach różnej narodowości, mieszkańcach dzielnicy oraz zwiedzających. Jest to niebanalny przewodnik, dzięki któremu zwiedzający może poznać nie tylko przestrzeń,  ale przede wszystkim ludzi związanych z Kazimierzem.
+  %p Logotyp oparty na kształcie dzielnicy, przypominający hebrajską literę BETA, odzwierciedla dwie kultury, religie i narody. Symbol DOMU, który niesie ze sobą BETA nawiązuje do swobodnej, bezpretensjonalnej atmosfery dzielnicy a także jego gościnności dla każdego bez względu na na wiek, religię czy pochodzenie.
+%section
+  %header.section-title
+    %h4
+      Linki
+  %div.row
+    %div.col-sm-4.col-xs-12.link-image
+      %a{:href => "#"}
+        = image_tag "poster3.jpg"
+      %p.link-subtitle Indentyfikacja dzielnicy
+    %div.col-sm-4.col-xs-12.link-image
+      %a{:href => "#"}
+        = image_tag "poster2.png"
+      %p.link-subtitle Plakaty polsko - żydowskie
+    %div.col-sm-4.col-xs-12.link-image
+      %a{:href => "http://kazimierzkrakow.org/", :target => "_blank"}
+        = image_tag "kuzmir_1.jpg"
+      %p.link-subtitle Zdjęcia Susanne Guzei - Taschner

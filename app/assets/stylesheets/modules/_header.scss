@@ -1,4 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic&subset=latin,latin-ext");
 
 h1, h2, h3, h4, h5, p {
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
@@ -10,26 +10,22 @@ p {
 	}
 }
 ::-webkit-input-placeholder {
-   color: #B8B8B8;
-   padding: 0 10px;
+   
    font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #B8B8B8; 
-   padding: 0 10px; 
+    
    font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #B8B8B8; 
-   padding: 0 10px; 
+  
    font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 
 :-ms-input-placeholder {  
-   color: #B8B8B8;  
-   padding: 0 10px;
+  
    font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 #header {

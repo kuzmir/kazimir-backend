@@ -1,65 +1,70 @@
+/* ANIMATION FOR BLUE BUTTON */
 @-webkit-keyframes blue {
-  0% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
-  50% { background-color: #0094FF; -webkit-box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #004A7F; -webkit-box-shadow: 0 0 3px #004A7F; }
+  0% { background-color: #0093bc; -webkit-box-shadow: 0 0 1px #0093bc; -webkit-transform: scale(1); }
+  50% { background-color: #0bafde; -webkit-box-shadow: 0 0 3px #0bafde; -webkit-transform: scale(1.02);}
+  100% { background-color: #0093bc; -webkit-box-shadow: 0 0 1px #0093bc; -webkit-transform: scale(1);}
 }
 
 @-moz-keyframes blue {
-  0% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
-  50% { background-color: #0094FF; -moz-box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #004A7F; -moz-box-shadow: 0 0 3px #004A7F; }
+   0% { background-color: #0093bc; -webkit-box-shadow: 0 0 1px #0093bc; -webkit-transform: scale(1); }
+  50% { background-color: #0bafde; -webkit-box-shadow: 0 0 3px #0bafde; -webkit-transform: scale(1.02);}
+  100% { background-color: #0093bc; -webkit-box-shadow: 0 0 1px #0093bc; -webkit-transform: scale(1);}
 }
 
 @-o-keyframes blue {
-  0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
-  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  0% { background-color: #0093bc; -webkit-box-shadow: 0 0 1px #0093bc; -webkit-transform: scale(1); }
+  50% { background-color: #0bafde; -webkit-box-shadow: 0 0 3px #0bafde; -webkit-transform: scale(1.02);}
+  100% { background-color: #0093bc; -webkit-box-shadow: 0 0 1px #0093bc; -webkit-transform: scale(1);}
 }
 
 @keyframes blue {
-  0% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
-  50% { background-color: #0094FF; box-shadow: 0 0 10px #0094FF; }
-  100% { background-color: #004A7F; box-shadow: 0 0 3px #004A7F; }
+  0% { background-color: #0093bc; -webkit-box-shadow: 0 0 1px #0093bc; -webkit-transform: scale(1); }
+  50% { background-color: #0bafde; -webkit-box-shadow: 0 0 3px #0bafde; -webkit-transform: scale(1.02);}
+  100% { background-color: #0093bc; -webkit-box-shadow: 0 0 1px #0093bc; -webkit-transform: scale(1);}
 }
+
+/* ANIMATION FOR GREEN BUTTON */
 @-webkit-keyframes green {
-  0% { background-color: #007c00; -webkit-box-shadow: 0 0 3px #007c00; }
-  50% { background-color: #43d300; -webkit-box-shadow: 0 0 10px #43d300; }
-  100% { background-color: #007c00; -webkit-box-shadow: 0 0 3px #007c00; }
+  0% { background-color: #479e1f; -webkit-box-shadow: 0 0 1px #479e1f; -webkit-transform: scale(1); }
+  50% { background-color: #70bf4c; -webkit-box-shadow: 0 0 3px #70bf4c; -webkit-transform: scale(1.02);}
+  100% { background-color: #479e1f; -webkit-box-shadow: 0 0 1px #479e1f; -webkit-transform: scale(1);}
 }
 
 @-moz-keyframes green {
-  0% { background-color: #007c00; -moz-box-shadow: 0 0 3px #007c00; }
-  50% { background-color: #43d300; -moz-box-shadow: 0 0 10px #43d300; }
-  100% { background-color: #007c00; -moz-box-shadow: 0 0 3px #007c00; }
+  0% { background-color: #479e1f; -webkit-box-shadow: 0 0 1px #479e1f; -webkit-transform: scale(1); }
+  50% { background-color: #70bf4c; -webkit-box-shadow: 0 0 3px #70bf4c; -webkit-transform: scale(1.02);}
+  100% { background-color: #479e1f; -webkit-box-shadow: 0 0 1px #479e1f; -webkit-transform: scale(1);}
 }
 
 @-o-keyframes green {
-  0% { background-color: #007c00; box-shadow: 0 0 3px #007c00; }
-  50% { background-color: #43d300; box-shadow: 0 0 10px #43d300; }
-  100% { background-color: #007c00; box-shadow: 0 0 3px #007c00; }
+  0% { background-color: #479e1f; -webkit-box-shadow: 0 0 1px #479e1f; -webkit-transform: scale(1); }
+  50% { background-color: #70bf4c; -webkit-box-shadow: 0 0 3px #70bf4c; -webkit-transform: scale(1.02);}
+  100% { background-color: #479e1f; -webkit-box-shadow: 0 0 1px #479e1f; -webkit-transform: scale(1);}
 }
 
 @keyframes green {
-  0% { background-color: #007c00; box-shadow: 0 0 3px #007c00; }
-  50% { background-color: #43d300; box-shadow: 0 0 10px #43d300; }
-  100% { background-color: #007c00; box-shadow: 0 0 3px #007c00; }
+  0% { background-color: #479e1f; -webkit-box-shadow: 0 0 1px #479e1f; -webkit-transform: scale(1); }
+  50% { background-color: #70bf4c; -webkit-box-shadow: 0 0 3px #70bf4c; -webkit-transform: scale(1.02);}
+  100% { background-color: #479e1f; -webkit-box-shadow: 0 0 1px #479e1f; -webkit-transform: scale(1);}
 }
+
 
 .flip-container {
 	perspective: 1000;
-	z-index: -1;
+	z-index: 0;
 	width: 232px;
-	height: 530px;
+	height: 475px;
 	background-image: url("iPhone_transparent1.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
+	position: relative;
 	.toggleButton {
 		z-index: 10000;
 		opacity: 1;
 		background-color: #70bf4c;
 		position: absolute;
-		bottom: 25%;
-		right: 41%;
+		bottom: 15%;
+		right: 39%;
 		height: 48px;
 		width: 48px;
 		border: none;
@@ -100,12 +105,12 @@
 }
 
 .front, .back {
-	width: 198px;
+	width: 199px;
 	height: 375px;
 	backface-visibility: hidden;
 	position: absolute;
-	top: 57px;
-	left: 18px;
+	top: 56px;
+	left: 17px;
 }
 .front {
 	z-index: 2;

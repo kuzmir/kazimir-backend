@@ -8,10 +8,11 @@
   %p Przewodnik KAZIMIR daje Ci możliwość szczegółowego poznania historycznej żydowskiej dzielnicy Krakowa. Zwiedzanie z aplikacją pozwoli Ci spojrzeć na Kazimierz z innej perspektywy, nie tylko z czysto historycznej czy konsumenckiej. Odkryjesz nieistniejące już miejsca związane z żydowską przeszłością; poznasz istotne zdarzenia, legendy, osoby, które ukształtowały świadomość mieszkańców Krakowa. Jednocześnie dowiesz się jak  się przeobraziły się wraz z upływem czasu.
   %p.middle Jak tylko aplikacja (Android, iOS) będzie gotowa do ściągnięcia. 
   %p Spodziewaj się wiadomości pod koniec maja 2015 ale bądź cierpliwa/y...:)
-  %form.contact-form
-  
-    %input{:name => "user-email", :type => "email", :class => "email-input", :placeholder => "Twój email"}/
-    %input{:type => "submit", :value => "Wyślij", :class => "submit-btn"}/
+  %form.contact-form.form-inline
+    %div.form-group
+      %input{:name => "user-email", :type => "email", :class => "email-input form-control", :placeholder => "Twój email"}/
+    %div.form-group
+      %input{:type => "submit", :value => "Wyślij", :class => "submit-btn"}/
 
 %section.content-section
   %header.section-title

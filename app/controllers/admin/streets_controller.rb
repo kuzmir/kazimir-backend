@@ -44,7 +44,7 @@ class Admin::StreetsController < Admin::AdminController
 
   private
     def street_params
-      params.require(:street).permit(:name, :description, :past_description)
+      params.require(:street).permit(:name, :description, :past_description, :path)
     end
 
     def find_street

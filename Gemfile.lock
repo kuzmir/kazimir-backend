@@ -38,12 +38,14 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.5.0)
     arel (6.0.0)
-    autoprefixer-rails (5.0.0.1)
+    autoprefixer-rails (5.1.7)
       execjs
+      json
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (3.3.1.0)
-      sass (~> 3.2)
+    bootstrap-sass (3.3.3)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.2.19)
     builder (3.2.2)
     byebug (3.5.1)
       columnize (~> 0.8)
@@ -78,13 +80,15 @@ GEM
     coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.0)
+    coffee-script-source (1.9.1)
     colorize (0.7.5)
     columnize (0.9.0)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
     erubis (2.7.0)
     execjs (2.3.0)
+    figaro (1.1.0)
+      thor (~> 0.14)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
     haml (4.0.6)
@@ -102,7 +106,7 @@ GEM
       nokogiri (~> 1.6.0)
       ruby_parser (~> 3.5)
     i18n (0.7.0)
-    jbuilder (2.2.7)
+    jbuilder (2.2.8)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (4.0.3)
@@ -131,7 +135,7 @@ GEM
       minitest-capybara (~> 0.7.0)
       minitest-metadata (~> 0.5.0)
       minitest-rails (~> 2.1)
-    minitest-reporters (1.0.10)
+    minitest-reporters (1.0.11)
       ansi
       builder
       minitest (>= 5.0)
@@ -238,6 +242,7 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rvm
   coffee-rails (~> 4.1.0)
+  figaro
   haml-rails (~> 0.8)
   jbuilder (~> 2.0)
   jquery-rails

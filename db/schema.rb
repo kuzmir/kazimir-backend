@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150219221723) do
+ActiveRecord::Schema.define(version: 20150223223846) do
 
   create_table "streets", force: :cascade do |t|
     t.string   "name",             limit: 255,                   null: false
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20150219221723) do
     t.boolean  "active",           limit: 1,     default: false, null: false
     t.datetime "created_at",                                     null: false
     t.datetime "updated_at",                                     null: false
+    t.text     "path",             limit: 65535
   end
 
 end

@@ -1,0 +1,18 @@
+%fieldset
+  %legend Place on map
+
+  %div.row
+    %div.col-md-10
+      = f.input :path, as: :string, input_html: {readonly: true}, label: false, placeholder: 'Serialized path...'
+    %div.col-md-2
+      %a{class: "btn btn-primary js-edit-path"} Edit path
+
+      %a{class: "btn btn-default js-undo-path hide"} Undo
+      %a{class: "btn btn-primary js-finish-path hide"} Done
+
+  %div#map
+
+
+- content_for :head do
+  :javascript
+    window.google_maps_api_key = "#{Figaro.env.google_maps_api_key}"

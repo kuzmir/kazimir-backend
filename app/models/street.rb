@@ -4,4 +4,5 @@ class Street < ActiveRecord::Base
   validates :description, presence: true
   validates :past_description, presence: true
 
+
 end

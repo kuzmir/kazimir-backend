@@ -12,11 +12,11 @@
     %thead
       %tr
         %th id
-        %th name
+        %th.col-md-1 name
         %th description
         %th active
-        %th updated at
-        %th actions
+        %th.col-md-2 updated at
+        %th.col-md-2 actions
 
     %tbody
       - if @streets.size > 0
@@ -26,7 +26,11 @@
             %td= street.name
             %td
               = street.description
-            %td= street.active
+            %td.text-center
+              - if street.active
+                %span.glyphicon.glyphicon-ok-circle
+              - else
+                %span.glyphicon.glyphicon-remove-circle
             %td= street.updated_at
             %td
               = link_to "edit", edit_admin_street_path(street), class: 'btn btn-default btn-sm'

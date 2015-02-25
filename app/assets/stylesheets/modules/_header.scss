@@ -10,28 +10,28 @@ p {
 	}
 }
 ::-webkit-input-placeholder {
-   
+
    font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-    
+
    font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  
+
    font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 
-:-ms-input-placeholder {  
-  
+:-ms-input-placeholder {
+
    font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 #header {
 	background-color: #1f1815;
 	background-attachment: scroll,	fixed;
-	background-image: url("gradient.png"), url("bg-image1.jpg");
+	background-image: asset_url("gradient.png"), asset_url("bg-image1.jpg");
 	background-repeat: repeat,	no-repeat;
 	background-size: auto,	auto 100%;
 	color: rgba(255, 255, 255, 0.5);

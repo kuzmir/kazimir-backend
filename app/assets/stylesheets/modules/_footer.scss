@@ -31,7 +31,7 @@
 	@media(max-width: 992px) {
 		background-attachment: scroll;
 		background-color: #1f1815;
-		background-image: url("gradient.png"), url("bg-image1.jpg");
+		background-image: asset_url("gradient.png"), asset_url("bg-image1.jpg");
 		background-position: top left,	bottom center;
 		background-repeat: repeat,	no-repeat;
 		background-size: auto,	cover;

@@ -1,7 +1,7 @@
 #main {
 	margin-left: 35%;
 	max-width: 58em;
-	padding: 8em 0em 4em 8em;
+	padding: 8em 4em 4em 8em;
 	width: calc(100% - 40%);
 	.major {
 		.subtitle {
@@ -12,8 +12,9 @@
 	}
 	@media(max-width: 992px) {
 		margin: 0;
-		padding: 4em 2em;
+		padding: 2em;
 		width: 100%;
+		max-width: 100%;
 	}
 	@media(max-width: 768px) {
 		padding: 2em 1em;

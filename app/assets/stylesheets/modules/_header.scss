@@ -1,10 +1,12 @@
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic&subset=latin,latin-ext");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&subset=latin,latin-ext");
 
 h1, h2, h3, h4, h5, p {
 	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	font-weight: 300;
 }
 p {
 	line-height: 24px;
+	
 	&.middle {
 		margin: 0;
 	}
@@ -37,12 +39,11 @@ p {
 	color: rgba(255, 255, 255, 0.5);
 	height: 100%;
 	left: 0;
-	padding: 8em 4em 0 0;
 	position: fixed;
 	text-align: right;
 	top: 0;
 	width: 40%;
-	padding: 10em 8em 10em 12em;
+	padding: 7em 8em 10em 12em;
 	img {
 		width: 100%;
 	}

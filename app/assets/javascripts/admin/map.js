@@ -12,6 +12,13 @@ var Kzmr = {
 
     // load the google map script asynchronously
     initGoogleMap: function(){
+
+      // already initialized
+      if(typeof window.google !== 'undefined'){
+        this.mapOnLoad();
+        return true;
+      }
+
       var script = document.createElement('script');
       script.type = 'text/javascript';
       script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&key= ' + window.google_maps_api_key + '&callback=Kzmr.Map.mapOnLoad'

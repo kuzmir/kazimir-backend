@@ -33,7 +33,7 @@ var Kzmr = {
       var mapOptions = {
         zoom: 16,
         center: new google.maps.LatLng(50.0491111, 19.9445078), // Kazimierz center
-        disableDefaultUI: true
+        panControl: false        
       };
 
       this.map = new google.maps.Map($('#map').get(0), mapOptions);

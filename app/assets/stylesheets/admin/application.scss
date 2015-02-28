@@ -1,6 +1,13 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.site-footer{
+  margin-top: 50px;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px dashed #eee;
+  background: #fbfbfb;
+}
 
 .page-header{
 
@@ -22,4 +29,10 @@
 
 .line-point{
   margin: 0 5px 5px 0;
+}
+
+.form-actions{
+  border-top: 1px solid #eee;
+  padding: 10px 20px;
+  margin: 0 -20px;
 }

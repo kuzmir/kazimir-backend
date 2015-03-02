@@ -45,15 +45,22 @@
 	}
 	.link-subtitle {
 		padding: 10px 0;
+		font-size: 14px;
 	}
+}
+.links-section {
+	margin-top: 15px;
 }
 .section-title {
 	text-transform: uppercase;
 	padding: 30px 0 5px 0;
 }
+.newsletter-info {
+	padding-top: 20px;
+}
 .contact-form {
-	padding-top: 25px;
-	margin: 0 0 10px;
+	padding-top: 10px;
+	margin: 0 0 20px;
 	.form-group {
 		display: inline-block;
 		margin-bottom: 0;
@@ -79,7 +86,7 @@
 }
 .form-inline {
 	.form-control {
-		width: 235px;
+		width: 275px;
 		@media(max-width: 768px) {
 			width: auto;
 		}

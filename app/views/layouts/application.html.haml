@@ -8,8 +8,10 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     %link{rel: "apple-touch-icon", href: "/apple-touch-icon.png"}
     %link{rel: "icon", href: "/favicon.png"}
-    
     = csrf_meta_tags
+    - if Rails.env == "production"
+      = render partial: 'layouts/shared/tracker'
+
   %body
     = render 'layouts/shared/header'
     - if content_for? :hero

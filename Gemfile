@@ -45,6 +45,8 @@ gem 'simple_form'
 # Managing env variables with figaro: https://github.com/laserlemon/figaro
 gem 'figaro'
 
+# Render text with Markdown: http://crabonature.pl/posts/16-markdown-in-ruby-on-rails
+gem 'redcarpet'
 
 
 group :development do

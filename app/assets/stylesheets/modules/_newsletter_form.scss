@@ -1,0 +1,24 @@
+.contact-form {
+	padding-top: 10px;
+	margin: 0 0 20px;
+
+	.form-group {
+		display: inline-block;
+		margin-bottom: 0;
+		vertical-align: middle;
+	}
+
+  .btn-submit{
+    text-transform: uppercase;
+  }
+
+  .form-control {
+    width: 275px;
+  }
+
+  // use
+	@media(max-width: $screen-xs-max) {
+		width: auto;
+	}
+
+}

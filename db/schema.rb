@@ -11,7 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150223223846) do
+ActiveRecord::Schema.define(version: 20150306225242) do
+
+  create_table "pages", force: :cascade do |t|
+    t.string   "title",        limit: 255
+    t.string   "subtitle",     limit: 255
+    t.string   "description",  limit: 255
+    t.text     "introduction", limit: 65535
+    t.text     "content",      limit: 65535
+    t.text     "aside",        limit: 65535
+    t.text     "footnotes",    limit: 65535
+    t.string   "slug",         limit: 255
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
+
+  add_index "pages", ["slug"], name: "index_pages_on_slug", using: :btree
+
+  create_table "places", force: :cascade do |t|
+    t.integer  "street_id",        limit: 4
+    t.string   "name",             limit: 255
+    t.text     "description",      limit: 65535
+    t.text     "past_description", limit: 65535
+    t.float    "latidude",         limit: 24
+    t.float    "longitude",        limit: 24
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+  end
 
   create_table "streets", force: :cascade do |t|
     t.string   "name",             limit: 255,                   null: false

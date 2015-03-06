@@ -1,6 +1,12 @@
 class PagesController < ApplicationController
 
   def index
+    @page = Page.find_by slug: 'index'
+
+    if @page.nil?
+      render template: "pages/static/index"
+    end
+
   end
 
 

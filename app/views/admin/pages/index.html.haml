@@ -1,0 +1,36 @@
+%div.page-header
+  %h1 Site Pages
+
+  %nav
+    %ul.nav.nav-pills
+      %li= link_to "Create new page", new_admin_page_path
+
+
+%div.page-content
+
+  %table.table
+    %thead
+      %tr
+        %th slug
+        %th.col-md-1 name
+        %th description
+        %th.col-md-2 updated at
+        %th.col-md-2 actions
+
+    %tbody
+      - if @pages.size > 0
+        - @pages.each do |page|
+          %tr
+            %td= page.slug
+            %td= page.title
+            %td= page.description
+            %td= page.updated_at
+            %td
+              = link_to "edit", edit_admin_page_path(page), class: 'btn btn-default btn-sm'
+              = link_to "delete", admin_page_path(page), method: 'delete', class: 'btn btn-sm btn-danger', data: {confirm: "Are you sure to delete?"}
+      - else
+        %tr
+          %td{colspan: 6}
+            %p
+              No pages found in the database, yet.
+              = link_to "Create first page now!", new_admin_page_path, class: 'btn btn-primary'

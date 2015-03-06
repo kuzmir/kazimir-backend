@@ -1,0 +1,16 @@
+= simple_form_for([:admin, page]) do |f|
+
+  = f.input :title, label: "Page title", placeholder: "Title of the page"
+  = f.input :subtitle
+  = f.input :description, label: "Description of the page", placeholder: "Description is used only for administration"
+  = f.input :slug, label: "Page slug", placeholder: "Unique identifier of the page"
+
+  %fieldset
+    %legend Page contents:
+
+    = f.input :introduction, input_html: {rows: 3}
+    = f.input :content, input_html: {rows: 6}
+    = f.input :footnotes, input_html: {rows: 3}
+
+  %div.form-actions
+    = f.button :submit, class: 'btn-primary'

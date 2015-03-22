@@ -6,6 +6,8 @@ $brand-primary: #6cb949;
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+@import "common/typography";
+
 @import "modules/header";
 @import "modules/footer";
 @import "modules/hero";

@@ -44,7 +44,7 @@ class Admin::PagesController < Admin::AdminController
 
   private
     def page_params
-      params.require(:page).permit(:title, :subtitle, :description, :introduction, :content, :aside, :footnotes, :slug)
+      params.require(:page).permit(:title_en, :title_pl, :subtitle_en, :subtitle_pl, :description_en, :description_pl, :introduction_en, :introduction_pl, :content_en, :content_pl, :aside_en, :aside_pl, :footnotes_en, :footnotes_pl, :slug_en, :slug_pl)
     end
 
     def find_page

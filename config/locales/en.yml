@@ -20,4 +20,13 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  pages:
+    index:
+      links: "Links"
+      visual_identity_of_the_district: "Identity"
+      polish_jewish_posters: "Posters"
+      photos_from_susanne: "Photos"
+    partials:
+      mailchimp:
+        your_email: "Your email"
+        submit: "Submit"

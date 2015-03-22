@@ -1,14 +1,14 @@
 class PagesController < ApplicationController
 
   def index
-    @page = Page.find_by slug: 'index'
+
+    @page = Page.find_by_locale_slug(:index).first
 
     if @page.nil?
       render template: "pages/static/index"
     end
 
   end
-
 
   def static
 

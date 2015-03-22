@@ -1,67 +1,17 @@
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&subset=latin,latin-ext");
+.site-header{
+	position: relative;
 
-h1, h2, h3, h4, h5, p {
-	font-family: 'Source Sans Pro', Helvetica, sans-serif;
-	font-weight: 300;
-}
-p {
-	line-height: 24px;
-	font-size: 16px;
-	&.middle {
-		margin: 0;
+	.brand-logo{
+		position: absolute;
+		left: 35%;
+		top: 120px;
+		margin-left: 8em;
 	}
-}
-::-webkit-input-placeholder {
 
-   font-family: 'Source Sans Pro', Helvetica, sans-serif;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-
-   font-family: 'Source Sans Pro', Helvetica, sans-serif;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-
-   font-family: 'Source Sans Pro', Helvetica, sans-serif;
-}
-
-:-ms-input-placeholder {
-
-   font-family: 'Source Sans Pro', Helvetica, sans-serif;
-}
-#header {
-	background-color: #1f1815;
-	background-attachment: scroll,	fixed;
-	background-image: asset_url("gradient.png"), asset_url("bg-image1.jpg");
-	background-repeat: repeat,	no-repeat;
-	background-size: auto,	auto 100%;
-	color: rgba(255, 255, 255, 0.5);
-	height: 100%;
-	left: 0;
-	position: fixed;
-	text-align: right;
-	top: 0;
-	width: 40%;
-	padding: 7em 8em 10em 12em;
-	img {
-		width: 100%;
+	.nav-lang{
+		position: absolute;
+		right: 20px;
+		top: 10px;
 	}
-	h1 {
-		font-size: 1.75em;
-		br {
-			display: inline;
-		}
-	}
-	@media(max-width: 992px) {
-		background-attachment: scroll;
-		background-position: top left,	center center;
-		background-size: auto,	cover;
-		left: auto;
-		padding: 6em 4em;
-		position: relative;
-		text-align: center;
-		top: auto;
-		width: 100%;
-	}
+
 }

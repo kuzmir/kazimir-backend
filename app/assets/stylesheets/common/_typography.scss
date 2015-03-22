@@ -1,0 +1,30 @@
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&subset=latin,latin-ext");
+
+h1, h2, h3, h4, h5, p {
+	font-family: 'Source Sans Pro', Helvetica, sans-serif;
+	font-weight: 300;
+}
+p {
+	line-height: 24px;
+	font-size: 16px;
+	&.middle {
+		margin: 0;
+	}
+}
+
+
+::-webkit-input-placeholder {
+   font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+
+:-ms-input-placeholder {
+   font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}

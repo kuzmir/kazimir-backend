@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '2.1.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '4.2.1'
 
 # Use mysql as the database for Active Record
 gem 'mysql2'
@@ -36,9 +36,6 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
 # Build markup independend forms with https://github.com/plataformatec/simple_form
 gem 'simple_form'
 
@@ -48,6 +45,14 @@ gem 'figaro'
 # Render text with Markdown: http://crabonature.pl/posts/16-markdown-in-ruby-on-rails
 gem 'redcarpet'
 
+# Some view helpers from Thougthbot: https://github.com/thoughtbot/flutie
+gem 'flutie'
+
+# Rails i18n locales
+gem 'rails-i18n', '~> 4.0.0'
+
+# Single table translations via Traco: https://github.com/barsoom/traco
+gem 'traco'
 
 group :development do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -64,6 +69,8 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-rvm'
   gem 'capistrano-passenger'
+
+  gem 'quiet_assets'
 
 end
 

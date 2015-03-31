@@ -1,0 +1,15 @@
+/ Begin MailChimp Signup Form
+#mc_embed_signup
+  %form#mc-embedded-subscribe-form.validate.contact-form.form-inline{:action => "//kazimirapp.us10.list-manage.com/subscribe/post?u=e537a48d6e24fc4f1101ad9c7&id=aa7c03cdeb", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
+    #mc_embed_signup_scroll
+      .mc-field-group.form-group
+        %input#mce-EMAIL.required.email.mail-input.form-control{:name => "EMAIL", :placeholder => t(".your_email"), :type => "email", :value => ""}/
+      .form-group
+        %input#mc-embedded-subscribe.btn.btn-primary.btn-submit{:name => "subscribe", :type => "submit", :value => t(".submit")}/
+      #mce-responses.clear
+        #mce-error-response.response{:style => "display:none"}
+        #mce-success-response.response{:style => "display:none"}
+      / real people should not fill this in and expect good things - do not remove this or risk form bot signups
+      %div{:style => "position: absolute; left: -5000px;"}
+        %input{:name => "b_e537a48d6e24fc4f1101ad9c7_aa7c03cdeb", :tabindex => "-1", :type => "text", :value => ""}/
+/ End mc_embed_signup

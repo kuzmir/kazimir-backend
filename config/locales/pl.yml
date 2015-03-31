@@ -1,0 +1,11 @@
+pl:
+  pages:
+    index:
+      links: "Linki"
+      visual_identity_of_the_district: "Indentyfikacja dzielnicy"
+      polish_jewish_posters: "Plakaty polsko-żydowskie"
+      photos_from_susanne: "Zdjęcia Susanne Guzei-Taschner"
+    partials:
+      mailchimp:
+        your_email: "Twój email"
+        submit: "Wyślij"

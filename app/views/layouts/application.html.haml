@@ -13,7 +13,7 @@
     - if Rails.env == "production"
       = render partial: 'layouts/shared/tracker'
 
-  %body
+  %body{class: body_class}
     = render 'layouts/shared/header'
     - if content_for? :hero
       = yield :hero

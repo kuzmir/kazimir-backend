@@ -1,16 +1,33 @@
 = simple_form_for([:admin, page]) do |f|
 
-  = f.input :title, label: "Page title", placeholder: "Title of the page"
-  = f.input :subtitle
-  = f.input :description, label: "Description of the page", placeholder: "Description is used only for administration"
-  = f.input :slug, label: "Page slug", placeholder: "Unique identifier of the page"
+  %div.row
+    %div.col-md-6
+      %fieldset
+        %legend Page details (english)
+        = f.input :title_en, label: "Page title", placeholder: "Title of the page"
+        = f.input :subtitle_en, label: "Subtitle"
+        = f.input :description_en, label: "Description of the page", placeholder: "Description is used only for administration"
+        = f.input :slug_en, label: "Page slug", placeholder: "Unique identifier of the page"
 
-  %fieldset
-    %legend Page contents:
+        %hr
 
-    = f.input :introduction, input_html: {rows: 3}
-    = f.input :content, input_html: {rows: 6}
-    = f.input :footnotes, input_html: {rows: 3}
+        = f.input :introduction_en, input_html: {rows: 3}
+        = f.input :content_en, input_html: {rows: 6}
+        = f.input :footnotes_en, input_html: {rows: 3}
+
+    %div.col-md-6
+      %fieldset
+        %legend Szczegóły strony (polski)
+        = f.input :title_pl, label: "Tytuł strony", placeholder: "Tytuł strony"
+        = f.input :subtitle_pl, label: "Podtytuł"
+        = f.input :description_pl, label: "Opis strony", placeholder: "Na razie używany tylko w adminie"
+        = f.input :slug_pl, label: "Slug strony", placeholder: "Unikalny identyfikator w URL"
+
+        %hr
+
+        = f.input :introduction_pl, input_html: {rows: 3}
+        = f.input :content_pl, input_html: {rows: 6}
+        = f.input :footnotes_pl, input_html: {rows: 3}
 
   %div.form-actions
     = f.button :submit, class: 'btn-primary'

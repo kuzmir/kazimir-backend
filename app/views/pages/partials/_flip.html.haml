@@ -1,0 +1,8 @@
+%div.hero
+  %div.flip-container#flip-toggle
+    %div.flipper
+      %div.front
+        = image_tag "kazimir-new.png"
+      %div.back
+        = image_tag "kazimir-past.png"
+    %button.toggleButton{:onclick => "document.querySelector('#flip-toggle').classList.toggle('hover');"}

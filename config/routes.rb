@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
 
 
+
   scope "(:locale)", locale: /pl|en/ do
-
-    # browse resources
-
-    resources :streets
 
     # static pages
 
@@ -16,13 +13,20 @@ Rails.application.routes.draw do
     root 'pages#index'
   end
 
+  # browse resources
+
+  resources :streets
+
+
 
   # admin routes
 
   namespace :admin do
     root 'admin#index'
     resources :pages
-    resources :streets
+    resources :streets do
+      resources :places
+    end
   end
 
 

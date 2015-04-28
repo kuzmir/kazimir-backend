@@ -1,0 +1,8 @@
+%div.page-header
+  %h1
+    = @street.name
+    %small
+      #{@place.name} / Edit place
+
+%div.page-content
+  = render partial: 'form', locals: {street: @street, place: @place}

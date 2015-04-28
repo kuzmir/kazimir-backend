@@ -1,8 +1,34 @@
 class Street < ActiveRecord::Base
 
+  ## Associations
+
+  has_many :places
+
+
+  ## Validations
+
   validates :name, presence: true
-  # validates :description, presence: true
-  # validates :past_description, presence: true
+
+
+  ## Scopes
+
+  def present_places
+    places.present
+  end
+
+
+  ## Class methods
+
+  def past_places
+    places.past
+  end
+
+
+  ## Instance methods
+
+  def path_array
+    path.split(',')
+  end
 
 
 end

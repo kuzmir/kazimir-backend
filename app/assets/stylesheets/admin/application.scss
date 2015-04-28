@@ -36,3 +36,8 @@
   padding: 10px 20px;
   margin: 0 -20px;
 }
+
+
+.item-empty{
+  @extend .text-muted;
+}

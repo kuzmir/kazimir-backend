@@ -1,0 +1,13 @@
+= simple_form_for([:admin, street, place]) do |f|
+
+  %div.row
+    %div.col-md-6
+
+      = f.input :place_type, as: :radio_buttons, collection: place_type_form_options
+
+      = f.input :name, label: "Place name", hint: "The name of the place"
+      = f.input :description, input_html: {rows: 10}
+
+
+  %div.form-actions
+    = f.button :submit, class: 'btn-primary'

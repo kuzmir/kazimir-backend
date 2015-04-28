@@ -1,0 +1,12 @@
+%div.page-header
+  %h1
+    = @place.name
+    %small
+      \/ #{@street.name} street
+
+%div.page-content
+  %h3 Place description
+  = simple_format @place.description
+
+  %h3 Place photos
+  %p No photos yet

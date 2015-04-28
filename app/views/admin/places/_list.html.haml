@@ -1,0 +1,19 @@
+%table.table
+  %thead
+    %tr
+      %th #
+      %th Place name
+      %th Actions
+  %tbody
+    - if places.size > 0
+      - places.each_with_index do |place, index|
+        %tr
+          %td= index + 1
+          %td= place.name
+          %td
+            = link_to 'show', admin_street_place_path(place.street, place), class: 'btn btn-default btn-sm'
+            = link_to 'edit', edit_admin_street_place_path(place.street, place), class: 'btn btn-default btn-sm'
+            = link_to 'delete', admin_street_place_path(place.street, place), class: 'btn btn-warning btn-sm', method: :delete, data: {confirm: "Are you sure to delete?"}
+    - else
+      %tr
+        %td{colspan: 3} No places added yet.

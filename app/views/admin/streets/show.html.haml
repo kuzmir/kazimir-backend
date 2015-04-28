@@ -1,0 +1,33 @@
+%div.page-header
+  %h1= @street.name
+
+%div.page-content
+
+  %div.row
+    %div.col-md-6
+
+      %div.panel.panel-default
+        %div.panel-heading Present description
+        %div.panel-body
+          = simple_format @street.description
+
+      %div.panel.panel-default
+        %div.panel-heading Places list (present)
+        = render partial: 'admin/places/list', locals: {places: @street.present_places}
+
+
+      = link_to "Add new present place", new_admin_street_place_path(@street, place_type: Place::PRESENT), class: 'btn btn-default'
+
+    %div.col-md-6
+
+      %div.panel.panel-default
+        %div.panel-heading Past description
+        %div.panel-body
+          = simple_format @street.past_description
+
+      %div.panel.panel-default
+        %div.panel-heading Places list (past)
+        = render partial: 'admin/places/list', locals: {places: @street.past_places}
+
+
+      = link_to "Add new past place", new_admin_street_place_path(@street, place_type: Place::PAST), class: 'btn btn-default'

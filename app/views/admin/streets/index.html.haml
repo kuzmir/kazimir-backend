@@ -5,7 +5,6 @@
     %ul.nav.nav-pills
       %li= link_to "Add new Street", new_admin_street_path
 
-
 %div.page-content
 
   %table.table
@@ -23,7 +22,8 @@
         - @streets.each do |street|
           %tr
             %td= street.id
-            %td= street.name
+            %td
+              = link_to street.name, admin_street_path(street)
             %td
               = street.description
             %td.text-center

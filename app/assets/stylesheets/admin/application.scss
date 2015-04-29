@@ -10,7 +10,7 @@
 }
 
 .page-header{
-  
+
   position: relative;
 
   nav{
@@ -40,4 +40,8 @@
 
 .item-empty{
   @extend .text-muted;
+}
+
+.place-photo{
+  max-width: 100%;
 }

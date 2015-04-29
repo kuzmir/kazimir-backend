@@ -8,6 +8,7 @@ class Place < ActiveRecord::Base
   ## Associations
 
   belongs_to :street
+  has_many :photos
 
 
   ## Validations

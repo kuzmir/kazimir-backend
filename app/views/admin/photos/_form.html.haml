@@ -1,0 +1,8 @@
+= simple_form_for([:admin, place, photo]) do |f|
+
+  = f.input :title, label: "Photo title"
+  = f.input :description, input_html: {rows: 3}
+  = f.input :image, as: :file
+
+  %div.form-actions
+    = f.button :submit, class: 'btn-primary'

@@ -2,7 +2,8 @@
   %thead
     %tr
       %th #
-      %th.col-md-7 Place name
+      %th.col-md-6 Place name
+      %th Photos
       %th Actions
   %tbody
     - if places.size > 0
@@ -10,6 +11,7 @@
         %tr
           %td= index + 1
           %td= link_to place.name, admin_street_place_path(place.street, place)
+          %td= place.photos.size
           %td
             = link_to 'show', admin_street_place_path(place.street, place), class: 'btn btn-default btn-sm'
             = link_to 'edit', edit_admin_street_place_path(place.street, place), class: 'btn btn-default btn-sm'

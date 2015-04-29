@@ -1,0 +1,24 @@
+%div.page-header
+  %h1
+    = @place.name
+    %small
+      \/ Manage photos
+
+  %nav
+    %ul.nav.nav-pills
+      %li= link_to "Back to place details", admin_street_place_path(@place.street, @place)
+
+%div.page-content
+  %div.row
+    %div.col-md-8
+      - if @place.photos.size > 0
+        - @place.photos.in_groups_of(4, false) do |photo_groups|
+          %div.row
+            - photo_groups.each do |photo|
+              %div.col-xs-6.col-md-4
+                = image_tag photo.image.url(:small), class: 'place-photo', alt: photo.title
+      - else
+        %p.item-empty
+          No photos yet!
+    %div.col-md-4
+      = render partial: 'admin/photos/form', locals: {place: @place, photo: @photo}

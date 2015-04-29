@@ -30,4 +30,11 @@
     %dd= simple_format @place.description
 
     %dt Photos:
-    %dd No photos yet
+    %dd
+      - if @place.photos.size > 0
+        %ul.list-inline
+          - @place.photos.each do |photo|
+            %li= image_tag photo.image.url(:thumb), alt: photo.title
+      - else
+        %p No photos yet
+      = link_to "Manage photos for this place", admin_place_photos_path(@place), class: 'btn btn-default'

@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
 
 
+  resources :photos
   scope "(:locale)", locale: /pl|en/ do
 
     # static pages
@@ -29,8 +30,11 @@ Rails.application.routes.draw do
     resources :streets do
       resources :places
     end
+
+    # additional route for places resources, to prevent nesting photos
+    resources :places do
+      resources :photos
+    end
   end
-
-
 
 end

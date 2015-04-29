@@ -1,5 +1,10 @@
 %div.page-header
   %h1 Edit street
 
+  %nav
+    %ul.nav.nav-pills
+      %li= link_to "Back to street details", admin_street_path(@street)
+
+
 %div.page-content
   = render partial: 'form', locals: {street: @street}

@@ -4,5 +4,9 @@
     %small
       Add new place
 
+  %nav
+    %ul.nav.nav-pills
+      %li= link_to "Show street details", admin_street_path(@street)
+
 %div.page-content
-  = render partial: 'form', locals: {street: @street, place: @place}    
+  = render partial: 'form', locals: {street: @street, place: @place}

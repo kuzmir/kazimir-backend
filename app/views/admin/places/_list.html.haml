@@ -2,14 +2,14 @@
   %thead
     %tr
       %th #
-      %th Place name
+      %th.col-md-7 Place name
       %th Actions
   %tbody
     - if places.size > 0
       - places.each_with_index do |place, index|
         %tr
           %td= index + 1
-          %td= place.name
+          %td= link_to place.name, admin_street_place_path(place.street, place)
           %td
             = link_to 'show', admin_street_place_path(place.street, place), class: 'btn btn-default btn-sm'
             = link_to 'edit', edit_admin_street_place_path(place.street, place), class: 'btn btn-default btn-sm'

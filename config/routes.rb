@@ -15,7 +15,9 @@ Rails.application.routes.draw do
 
   # browse resources
 
-  resources :streets
+  resources :streets do
+    resources :places
+  end
 
 
 

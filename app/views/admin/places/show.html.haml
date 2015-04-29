@@ -2,11 +2,32 @@
   %h1
     = @place.name
     %small
-      \/ #{@street.name} street
+      \/ #{@place.street.name} street
+
+  %nav
+    %ul.nav.nav-pills
+      %li= link_to "Show street details", admin_street_path(@place.street)
+      %li= link_to "Edit place details", edit_admin_street_place_path(@place.street, @place)
+
 
 %div.page-content
-  %h3 Place description
-  = simple_format @place.description
 
-  %h3 Place photos
-  %p No photos yet
+  %dl.dl-horizontal
+
+    %dt Street name:
+    %dd= @place.street.name
+
+    %dt Place name:
+    %dd= @place.name
+
+    %dt Place type:
+    %dd= @place.place_type
+
+    %dt Public url:
+    %dd= link_to street_place_url(@place.street, @place), street_place_path(@place.street, @place)
+
+    %dt Place description:
+    %dd= simple_format @place.description
+
+    %dt Photos:
+    %dd No photos yet

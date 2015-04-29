@@ -1,33 +1,47 @@
 %div.page-header
   %h1= @street.name
 
+  %nav
+    %ul.nav.nav-pills
+      %li= link_to "Show street index", admin_streets_path
+      %li= link_to "Edit street details", edit_admin_street_path(@street)
+      %li= link_to "Add new place", new_admin_street_place_path(@street)
+
+
 %div.page-content
 
   %div.row
     %div.col-md-6
 
-      %div.panel.panel-default
-        %div.panel-heading Present description
-        %div.panel-body
-          = simple_format @street.description
+      %dl.dl-horizontal
 
-      %div.panel.panel-default
-        %div.panel-heading Places list (present)
-        = render partial: 'admin/places/list', locals: {places: @street.present_places}
+        %dt Street name:
+        %dd= @street.name
 
+        %dt Public url:
+        %dd= link_to street_url(@street), street_path(@street)
 
-      = link_to "Add new present place", new_admin_street_place_path(@street, place_type: Place::PRESENT), class: 'btn btn-default'
+        %dt Description:
+        %dd= simple_format @street.description
+
+        %dt Past description:
+        %dd= simple_format @street.past_description
+
+        %dt On the map:
+        %dd
+          = render partial: 'admin/streets/static_map', locals: {street: @street}
 
     %div.col-md-6
 
       %div.panel.panel-default
-        %div.panel-heading Past description
+        %div.panel-heading Present places
+
         %div.panel-body
-          = simple_format @street.past_description
+          = render partial: 'admin/places/list', locals: {places: @street.present_places}
+          = link_to "Add new present place", new_admin_street_place_path(@street, place_type: Place::PRESENT), class: 'btn btn-default'
 
-      %div.panel.panel-default
-        %div.panel-heading Places list (past)
-        = render partial: 'admin/places/list', locals: {places: @street.past_places}
+        %div.panel-heading Past places
 
-
-      = link_to "Add new past place", new_admin_street_place_path(@street, place_type: Place::PAST), class: 'btn btn-default'
+        %div.panel-body
+          = render partial: 'admin/places/list', locals: {places: @street.past_places}
+          = link_to "Add new place for the past", new_admin_street_place_path(@street, place_type: Place::PAST), class: 'btn btn-default'

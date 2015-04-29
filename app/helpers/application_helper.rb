@@ -54,4 +54,14 @@ module ApplicationHelper
 
   end
 
+  def static_google_map_image_for(street)
+
+    image = 'https://maps.googleapis.com/maps/api/staticmap?size=280x250&scale=2'
+    image += '&path=color:0x0000ff|weight:5|'
+    image += street.path_image_string
+
+    return tag('img', src: image, alt: street.name, width: 280, height: 250)
+
+  end
+
 end

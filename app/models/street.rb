@@ -27,7 +27,11 @@ class Street < ActiveRecord::Base
   ## Instance methods
 
   def path_array
-    path.split(',')
+    path.split(';')
+  end
+
+  def path_image_string
+    path.gsub(/;/, '|').chop
   end
 
 

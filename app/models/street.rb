@@ -10,6 +10,11 @@ class Street < ActiveRecord::Base
   validates :name, presence: true
 
 
+  ## Custom properties & functions
+
+  translates :name, :description, :past_description
+
+
   ## Scopes
 
   def present_places

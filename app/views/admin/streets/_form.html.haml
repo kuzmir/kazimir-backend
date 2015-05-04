@@ -1,12 +1,19 @@
 = simple_form_for([:admin, street]) do |f|
-  
-  = f.input :name, label: "Street name", hint: "The name of street, without \"Ulica\", for example: Szeroka"
 
   %div.row
     %div.col-md-6
-      = f.input :description, input_html: {rows: 3}
+      %fieldset
+        %legend Street details (english)
+        = f.input :name_en, label: "Street name", hint: "The name of street"
+        = f.input :description_en, input_html: {rows: 3}
+        = f.input :past_description_en, input_html: {rows: 3}
+
     %div.col-md-6
-      = f.input :past_description, input_html: {rows: 3}
+      %fieldset
+        %legend Szczegóły ulicy (polski)
+        = f.input :name_pl, label: "Nazwa ulicy", hint: "Nazwa ulicy"
+        = f.input :description_pl, input_html: {rows: 3}
+        = f.input :past_description_pl, input_html: {rows: 3}
 
   = render partial: 'admin/streets/map_field', locals: {street: street, f: f}
 

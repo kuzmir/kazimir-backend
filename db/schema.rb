@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150429213600) do
+ActiveRecord::Schema.define(version: 20150504214324) do
 
   create_table "pages", force: :cascade do |t|
     t.string   "title_en",        limit: 255
@@ -59,13 +59,16 @@ ActiveRecord::Schema.define(version: 20150429213600) do
   end
 
   create_table "streets", force: :cascade do |t|
-    t.string   "name",             limit: 255,                   null: false
-    t.text     "description",      limit: 65535,                 null: false
-    t.text     "past_description", limit: 65535,                 null: false
-    t.boolean  "active",           limit: 1,     default: false, null: false
-    t.datetime "created_at",                                     null: false
-    t.datetime "updated_at",                                     null: false
-    t.text     "path",             limit: 65535
+    t.string   "name_en",             limit: 255,                   null: false
+    t.string   "name_pl",             limit: 255
+    t.text     "description_en",      limit: 65535,                 null: false
+    t.text     "description_pl",      limit: 65535
+    t.text     "past_description_en", limit: 65535,                 null: false
+    t.text     "past_description_pl", limit: 65535
+    t.boolean  "active",              limit: 1,     default: false, null: false
+    t.datetime "created_at",                                        null: false
+    t.datetime "updated_at",                                        null: false
+    t.text     "path",                limit: 65535
   end
 
 end

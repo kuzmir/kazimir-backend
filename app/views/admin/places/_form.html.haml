@@ -1,13 +1,22 @@
 = simple_form_for([:admin, street, place]) do |f|
 
+  = f.input :place_type, as: :radio_buttons, collection: place_type_form_options
+
   %div.row
+
     %div.col-md-6
+      %fieldset
+        %legend English details:
 
-      = f.input :place_type, as: :radio_buttons, collection: place_type_form_options
+        = f.input :name_en, label: "Place name", hint: "The name of the place"
+        = f.input :description_en, input_html: {rows: 10}
 
-      = f.input :name, label: "Place name", hint: "The name of the place"
-      = f.input :description, input_html: {rows: 10}
+    %div.col-md-6
+      %fieldset
+        %legend Opis po polsku:
 
+        = f.input :name_pl, label: "Nazwa miejsca", hint: "Wpisz nazwę miejsca"
+        = f.input :description_pl, input_html: {rows: 10}
 
   %div.form-actions
     = f.button :submit, class: 'btn-primary'

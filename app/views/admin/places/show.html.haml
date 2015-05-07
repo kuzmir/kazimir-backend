@@ -14,11 +14,11 @@
 
   %dl.dl-horizontal
 
-    %dt Street name:
+    %dt Belongs to street:
     %dd= @place.street.name
 
     %dt Place name:
-    %dd= @place.name
+    %dd= "#{@place.name_pl} \ #{@place.name_en}"
 
     %dt Place type:
     %dd= @place.place_type
@@ -26,8 +26,12 @@
     %dt Public url:
     %dd= link_to street_place_url(@place.street, @place), street_place_path(@place.street, @place)
 
-    %dt Place description:
-    %dd= simple_format @place.description
+    %dt Place description (PL)
+    %dd= simple_format @place.description_pl
+
+    %dt Place description (EN)
+    %dd= simple_format @place.description_en
+
 
     %dt Photos:
     %dd

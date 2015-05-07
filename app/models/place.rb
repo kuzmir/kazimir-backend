@@ -5,6 +5,7 @@ class Place < ActiveRecord::Base
   PRESENT = :present
   PAST = :past
 
+
   ## Associations
 
   belongs_to :street
@@ -15,6 +16,11 @@ class Place < ActiveRecord::Base
 
   validates :name, presence: true
   validates :place_type, presence: true
+
+
+  ## Custom definintions
+
+  translates :name, :description
 
 
   ## Scopes

@@ -64,4 +64,9 @@ module ApplicationHelper
 
   end
 
+
+  def attachment_url(file, style = :original)
+    "#{request.protocol}#{request.host_with_port}#{file.url(style)}"
+  end
+
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150506202607) do
+ActiveRecord::Schema.define(version: 20150507214337) do
 
   create_table "pages", force: :cascade do |t|
     t.string   "title_en",        limit: 255
@@ -50,10 +50,12 @@ ActiveRecord::Schema.define(version: 20150506202607) do
   end
 
   create_table "places", force: :cascade do |t|
-    t.string   "name",        limit: 255,   null: false
-    t.text     "description", limit: 65535
-    t.string   "place_type",  limit: 255,   null: false
-    t.integer  "street_id",   limit: 4
+    t.string   "name_en",        limit: 255,   null: false
+    t.string   "name_pl",        limit: 255
+    t.text     "description_en", limit: 65535
+    t.text     "description_pl", limit: 65535
+    t.string   "place_type",     limit: 255,   null: false
+    t.integer  "street_id",      limit: 4
     t.datetime "created_at"
     t.datetime "updated_at"
   end

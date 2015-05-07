@@ -46,7 +46,7 @@ class Admin::PlacesController < Admin::AdminController
 
   private
     def place_params
-      params.require(:place).permit(:place_type, :name, :description)
+      params.require(:place).permit(:place_type, :name_en, :name_pl, :description_en, :description_pl)
     end
 
     def find_street

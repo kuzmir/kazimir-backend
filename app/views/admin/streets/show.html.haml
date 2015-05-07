@@ -11,7 +11,7 @@
 %div.page-content
 
   %div.row
-    %div.col-md-6
+    %div.col-md-5
 
       %dl.dl-horizontal
 
@@ -23,9 +23,10 @@
 
         %dt On the map:
         %dd
-          = render partial: 'admin/streets/static_map', locals: {street: @street}
+          %div.static-map
+            = render partial: 'admin/streets/static_map', locals: {street: @street}
 
-    %div.col-md-6
+    %div.col-md-7
 
       %div.places-list
         = render partial: 'admin/places/list', locals: {headline: "Present places", places: @street.present_places}

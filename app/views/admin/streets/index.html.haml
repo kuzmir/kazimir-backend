@@ -33,6 +33,7 @@
                 %span.glyphicon.glyphicon-remove-circle
             %td= street.updated_at.to_formatted_s :short
             %td
+              = link_to "show details", admin_street_path(street), class: 'btn btn-default btn-sm'
               = link_to "edit", edit_admin_street_path(street), class: 'btn btn-default btn-sm'
               = link_to "delete", admin_street_path(street), method: 'delete', class: 'btn btn-sm btn-danger', data: {confirm: "Are you sure to delete?"}
       - else

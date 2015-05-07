@@ -10,6 +10,8 @@
 
 %div.page-content
   %div.row
+    %div.col-md-4
+      = render partial: 'admin/photos/form', locals: {place: @place, photo: @photo}
     %div.col-md-8
       - if @place.photos.size > 0
         - @place.photos.in_groups_of(4, false) do |photo_groups|
@@ -20,5 +22,3 @@
       - else
         %p.item-empty
           No photos yet!
-    %div.col-md-4
-      = render partial: 'admin/photos/form', locals: {place: @place, photo: @photo}

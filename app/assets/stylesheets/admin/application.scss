@@ -20,7 +20,6 @@
   }
 }
 
-
 #map{
   width: 100%;
   height: 470px;
@@ -44,4 +43,13 @@
 
 .place-photo{
   max-width: 100%;
+}
+
+
+.row-id{
+  width: 4em;
+}
+
+.places-list{
+  @extend .well;
 }

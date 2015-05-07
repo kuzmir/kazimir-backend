@@ -10,12 +10,12 @@
   %table.table
     %thead
       %tr
-        %th id
-        %th.col-md-1 name
-        %th description
-        %th active
-        %th.col-md-2 updated at
-        %th.col-md-2 actions
+        %th.col-md-1 id
+        %th.col-md-3 name
+        %th places
+        -#%th.col-md-1 active
+        %th.col-md-2 last update at
+        %th.col-md-3 actions
 
     %tbody
       - if @streets.size > 0
@@ -25,13 +25,13 @@
             %td
               = link_to street.name, admin_street_path(street)
             %td
-              = street.description
-            %td.text-center
+              = street.places.count
+            -#%td.text-center
               - if street.active
                 %span.glyphicon.glyphicon-ok-circle
               - else
                 %span.glyphicon.glyphicon-remove-circle
-            %td= street.updated_at
+            %td= street.updated_at.to_formatted_s :short
             %td
               = link_to "edit", edit_admin_street_path(street), class: 'btn btn-default btn-sm'
               = link_to "delete", admin_street_path(street), method: 'delete', class: 'btn btn-sm btn-danger', data: {confirm: "Are you sure to delete?"}

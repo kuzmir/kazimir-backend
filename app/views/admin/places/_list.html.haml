@@ -2,7 +2,11 @@
   %thead
     %tr
       %th #
-      %th.col-md-6 Place name
+      %th.col-md-6
+        - if local_assigns.has_key? :headline
+          = headline
+        - else
+          Place name
       %th Photos
       %th Actions
   %tbody

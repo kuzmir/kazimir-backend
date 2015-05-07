@@ -2,17 +2,12 @@ class Street < ActiveRecord::Base
 
   ## Associations
 
-  has_many :places
+  has_many :places, dependent: :destroy
 
 
   ## Validations
 
   validates :name, presence: true
-
-
-  ## Custom properties & functions
-
-  translates :name, :description, :past_description
 
 
   ## Scopes

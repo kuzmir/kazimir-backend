@@ -8,7 +8,7 @@ class Place < ActiveRecord::Base
   ## Associations
 
   belongs_to :street
-  has_many :photos
+  has_many :photos, dependent: :destroy
 
 
   ## Validations

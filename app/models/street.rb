@@ -26,8 +26,12 @@ class Street < ActiveRecord::Base
 
   ## Instance methods
 
-  def path_array
-    path.split(';')
+  def path_coordinates
+    points = path.chop.split(';')
+    points.map!{ |point|
+      coords = point.split(',')
+      [coords[0].to_f, coords[1].to_f]
+    }
   end
 
   def path_image_string

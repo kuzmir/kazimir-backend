@@ -15,10 +15,12 @@ Rails.application.routes.draw do
   end
 
   # browse resources
+  # API
 
-  resources :streets do
-    resources :places
+  resources :streets, only: [:index, :show]  do
+    resources :places, only: [:index, :show]
   end
+
 
 
 

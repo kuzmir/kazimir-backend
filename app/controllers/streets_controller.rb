@@ -1,7 +1,6 @@
 class StreetsController < ApplicationController
   def index
     @streets = Street.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.json
@@ -14,8 +13,5 @@ class StreetsController < ApplicationController
       format.html
       format.json
     end
-
-
   end
-
 end

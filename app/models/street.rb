@@ -10,17 +10,21 @@ class Street < ActiveRecord::Base
   validates :name, presence: true
 
 
-  ## Scopes
+  ## Class methods
 
   def present_places
     places.present
   end
 
-
-  ## Class methods
-
   def past_places
     places.past
+  end
+
+  def places_by_type(type)
+
+    return present_places if type == :present
+    return past_places if type == :past
+
   end
 
 

@@ -8,5 +8,5 @@ json.details do
   end
 end
 
-json.update_at place.updated_at
+json.updated_at place.updated_at
 json.photos place.photos, partial: 'photos/photo', as: :photo

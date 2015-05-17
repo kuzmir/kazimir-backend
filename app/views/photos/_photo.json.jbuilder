@@ -15,3 +15,4 @@ json.images do
   json.medium attachment_url(photo.image, :medium)
   json.large attachment_url(photo.image, :large)
 end
+json.updated_at photo.updated_at

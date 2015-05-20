@@ -1,0 +1,78 @@
+#modal-1.md-modal.md-effect-5
+  .md-content
+    %div.row
+      %div.col-sm-8.full-image
+        = image_tag "p_rad.jpg"
+      %div.col-sm-4.full-text
+        %h3 Patrycja Radaczyńska
+        %p Her first love is music. Trained as a saxophonist, she's passionate about jazz and all kinds of impovisation. After falling in love with coding she now works as a front-end developer, where solving puzzles is what she likes most. Finds wandering the perfect way to relax and feels best when the landscape outside the window changes quickly. A true lover of inspiring art, technology that makes life easier and absurdity of all kinds.
+      %button.md-close X
+#modal-2.md-modal.md-effect-5
+  .md-content
+    %div.row
+      %div.col-sm-8.full-image
+        = image_tag "a_byw.jpg"
+      %div.col-sm-4.full-text
+        %h3 Ania Bywanis-Kwiecień
+        %p Trained as a lawyer, Ania decided to join the Krakow tech scene as a UI/UX designer. She currently manages the work of a few people on production of Project Kazimierz podcasts in a digital publishing house James Cook Publishing. After hours she helps with organizing TEDxKazimierz. Loves good people, good coffee and adventures that end well.
+      %button.md-close X
+#modal-3.md-modal.md-effect-5
+  .md-content
+    %div.row
+      %div.col-sm-8.full-image
+        = image_tag "w_dal.jpg"
+      %div.col-sm-4.full-text
+        %h3 Wiktoria Dalach
+        %p Programmer and photographer. In order to improve the mood of retailers and government officials, she founded the company called It's Super. She explores city's backyards. Always keen to sing a song, often with no recollection of the lyrics. She likes people, nice lines and contemporary art.
+      %button.md-close X
+#modal-4.md-modal.md-effect-5
+  .md-content
+    %div.row
+      %div.col-sm-8.full-image
+        = image_tag "j_luc.jpg"
+      %div.col-sm-4.full-text
+        %h3 Joanna Łuczyńska
+        %p Graphic designer always focused on both esthetics and functionality. Loves beautiful patterns and textures. Got her MA in psychology. After hours resides in kitchen, works out and loves every kind of cat.
+      %button.md-close X
+#modal-5.md-modal.md-effect-5
+  .md-content
+    %div.row
+      %div.col-sm-8.full-image
+        = image_tag "krzysiek.jpg"
+      %div.col-sm-4.full-text
+        %h3 Krzysztof Cieplucha
+        %p Freelance iOS developer. Technology and science-fiction geek. Runner, volunteer and music admirer after work. Wannabe rock star, race driver and astronaut. :)
+      %button.md-close X
+#modal-6.md-modal.md-effect-5
+  .md-content
+    %div.row
+      %div.col-sm-8.full-image
+        = image_tag "p_mle.jpg"
+      %div.col-sm-4.full-text
+        %h3 Piotr Mleczko
+        %p Software Devoloper in Corporation, photographer after work. Loves art, and cheap wine from supermarket.Shooting first of all for himself, secondly for Exclusive Info magazine, fashion - Wearwool, events like Startup Sprints, Social Meetups, Tedx conference. His first exhibition is a fact, hope to have more in future.
+      %button.md-close X
+%section.links-section
+  %header.section-title
+    %h4= t('.team')
+  %div.row
+    %div.col-sm-4.col-xs-12.link-image
+      %button.md-trigger{"data-modal" => "modal-1"}
+        = image_tag "p_rad_p.jpg"
+    %div.col-sm-4.col-xs-12.link-image
+      %button.md-trigger{"data-modal" => "modal-2"}
+        = image_tag "a_byw_p.jpg"
+    %div.col-sm-4.col-xs-12.link-image
+      %button.md-trigger{"data-modal" => "modal-3"}
+        = image_tag "w_dal_p.jpg"
+    %div.col-sm-4.col-xs-12.link-image
+      %button.md-trigger{"data-modal" => "modal-4"}
+        = image_tag "j_luc_p.jpg"
+    %div.col-sm-4.col-xs-12.link-image
+      %button.md-trigger{"data-modal" => "modal-5"}
+        = image_tag "krzysiek_p.jpg"
+    %div.col-sm-4.col-xs-12.link-image
+      %button.md-trigger{"data-modal" => "modal-6"}
+        = image_tag "p_mle_p.jpg"
+
+.md-overlay

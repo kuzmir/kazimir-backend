@@ -17,7 +17,7 @@
 %section.page-content
   = markdown @page.content
 
-%section.links-section
+%section.links-section.page-content
   %header.section-title
     %h4= t('.links')
   %div.row
@@ -35,4 +35,6 @@
       %a{:href => "http://kazimierzkrakow.org/", :target => "_blank"}
         = image_tag "kuzmir_1.jpg"
       %p.link-subtitle
-        = t('.photos_from_susanne')        
+        = t('.photos_from_susanne')      
+
+= render partial: 'pages/partials/team'

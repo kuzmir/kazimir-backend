@@ -7,6 +7,10 @@ class Admin::PhotosController < Admin::AdminController
     @photo = Photo.new
   end
 
+  def show
+
+  end
+
   def create
     @photo = Photo.new photo_params
     @photo.place = @place
@@ -33,7 +37,7 @@ class Admin::PhotosController < Admin::AdminController
 
   def destroy
 		@photo.destroy
-		redirect_to admin_place_photos_path(@pplace)
+		redirect_to admin_place_photos_path(@place)
 	end
 
   private
@@ -46,7 +50,7 @@ class Admin::PhotosController < Admin::AdminController
     end
 
     def find_photo
-      @photo = @street.photos.find params[:id]
+      @photo = @place.photos.find params[:id]
     end
 
 end

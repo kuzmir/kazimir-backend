@@ -1,0 +1,24 @@
+- if @place.photos.size > 0
+  %table.table
+    %thead
+      %tr
+        %th ID
+        %th photo
+        %th details
+        %th update
+        %th actions
+    %tbody
+      - @place.photos.each do |photo|
+        %tr
+          %td= photo.id
+          %td= image_tag photo.image.url(:thumb), class: 'place-photo', alt: photo.title
+          %td= photo.title
+          %td= photo.updated_at
+          %td
+            = link_to 'show', admin_place_photo_path(photo.place, photo), class: 'btn btn-default btn-sm'
+            = link_to 'edit', edit_admin_place_photo_path(photo.place, photo), class: 'btn btn-default btn-sm'
+            = link_to 'delete', admin_place_photo_path(photo.place, photo), class: 'btn btn-warning btn-sm', method: :delete, data: {confirm: "Are you sure to delete?"}
+
+- else
+  %p.item-empty
+    No photos yet!

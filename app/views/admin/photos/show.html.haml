@@ -1,0 +1,14 @@
+%div.page-header
+  %h1
+    = @place.name
+    %small
+      \/
+      = @photo.title
+
+  %nav
+    %ul.nav.nav-pills
+      %li= link_to "Back to place photos", admin_place_photos_path(@place)
+
+%div.page-content
+  %div.photo
+    = image_tag @photo.image.url(:large), class: 'place-photo img-responsive', alt: @photo.title

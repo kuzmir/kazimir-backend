@@ -51,7 +51,7 @@ Returns the JSON with all the streets & places
                             "description": "Synagoga Tempel (Synagoga Postępowa) – reformowana synagoga znajdująca się na Kazimierzu w Krakowie, przy ulicy Miodowej 24. Jest obecnie jedną z czterech czynnych synagog w mieście, jednak nabożeństwa odbywają się w niej wyłącznie od czasu do czasu."
                         }
                     },
-                    "update_at": "2015-05-07T21:52:00.000Z",
+                    "updated_at": "2015-05-07T21:52:00.000Z",
                     "photos": [
                         {
                             "id": 6,
@@ -71,7 +71,8 @@ Returns the JSON with all the streets & places
                                 "small": "http://kazimirapp.pl/system/photos/e671d8c186372f08d5313c22d8b3419f6785059d.jpg?1431036490",
                                 "medium": "http://kazimirapp.pl/system/photos/0e20a840b2cd7772a597247397671b41bca44c75.jpg?1431036490",
                                 "large": "http://kazimirapp.pl/system/photos/c0e3c588a1fb3994a4d1b674db0f9a1c4d1e642d.jpg?1431036490"
-                            }
+                            },
+                            "updated_at": "2015-05-07T22:08:16.000Z"
                         }
                     ]
                 }

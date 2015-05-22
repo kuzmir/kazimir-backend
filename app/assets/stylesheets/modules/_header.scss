@@ -12,6 +12,29 @@
 		position: absolute;
 		right: 20px;
 		top: 10px;
+		font-size: 18px;
+  		padding: 5px 8px;
+		a:hover, a:focus {
+			text-decoration: none;
+		}
 	}
 
+}
+@media(max-width: $screen-xs-max) {
+	.site-header{
+		padding: 10px 0;
+		.brand-logo{
+			position: relative;
+			left: 0;
+			top: 0;
+			margin-left: 5px;
+		}
+		.nav-lang{
+			top: 13px;
+  			padding: 5px 8px;
+			border: 1px solid #eee;
+			font-size: 16px;
+		}
+	}
+	
 }

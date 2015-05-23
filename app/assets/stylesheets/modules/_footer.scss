@@ -49,3 +49,13 @@ ul.copyright {
 	list-style: none;
 	padding-left: 0;
 }
+@media(max-width: $screen-sm-max) {
+	.appLinkFooter {
+		display: none;
+	}
+}
+@media(min-width: $screen-xs-max) {
+	.appLinkMobile {
+		display: none;
+	}
+}

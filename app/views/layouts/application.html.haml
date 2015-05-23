@@ -4,8 +4,8 @@
     %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title= content_for?(:page_title) ? yield(:page_title) : 'Kazimir - Opowieść o dwóch kulturach na krakowskim Kazimierzu'
     %meta{name: "description", content: "#{content_for?(:page_description) ? yield(:page_description) : 'Przewodnik Kazimir to aplikacja mobilna, która daje Ci możliwość szczegółowego poznania historycznej żydowskiej dzielnicy Krakowa.'}"}
-    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1'  }/
-    %meta{name: 'apple-itunes-app', content: 'app-id=995212413'}/
+    %meta{name: 'viewport', content: 'width=device-width, initial-scale=1' }/
+    %meta{name: 'apple-itunes-app', content: 'app-id=995212413' }/
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     %link{rel: "apple-touch-icon", href: "/apple-touch-icon.png"}

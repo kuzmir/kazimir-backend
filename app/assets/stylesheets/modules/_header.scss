@@ -8,14 +8,19 @@
 		margin-left: 8em;
 	}
 
-	.nav-lang{
+	.navigation{
 		position: absolute;
-		right: 20px;
-		top: 10px;
+		right: 14%;
+  		top: 50px;
 		font-size: 18px;
   		padding: 5px 8px;
+  		a {
+  			color: #77787a;
+  			padding: 10px;
+  		}
 		a:hover, a:focus {
 			text-decoration: none;
+			color: #222222;
 		}
 	}
 
@@ -27,13 +32,37 @@
 			position: relative;
 			left: 0;
 			top: 0;
-			margin-left: 5px;
+			margin-left: 10px;
 		}
-		.nav-lang{
-			top: 13px;
-  			padding: 5px 8px;
-			border: 1px solid #eee;
+		.navigation{
+			position: relative;
+			top: auto;
 			font-size: 16px;
+			left: 0;
+			padding-top: 15px;
+			a:first-child {
+				padding-left: 0;
+			}
+		}
+	}
+	
+}
+@media(max-width: 992px) {
+	.site-header{
+		padding: 10px 0;
+		.brand-logo{
+			position: relative;
+			left: 0;
+			top: 0;
+			margin-left: 10px;
+		}
+		.navigation{	
+			right: 0;
+			padding-top: 15px;
+			top: 0;
+			a:last-child {
+				padding-right: 0;
+			}
 		}
 	}
 	

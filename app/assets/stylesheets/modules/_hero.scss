@@ -11,7 +11,7 @@
 	text-align: right;
 	top: 0;
 	width: 40%;
-	padding: 7em 8em 10em 12em;
+	// padding: 7em 8em 10em 12em;
 
 	img {
 		width: 100%;
@@ -104,6 +104,13 @@
 	.link-subtitle {
 		padding: 10px 0;
 		font-size: 14px;
+	}
+}
+.press {
+	.link-image {
+		img {
+			border: 1px solid #222222;
+		}
 	}
 }
 .links-section {

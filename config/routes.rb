@@ -8,10 +8,12 @@ Rails.application.routes.draw do
     # static pages
 
     get 'pages/:page', to: 'pages#static', as: 'static_page'
-
+    get '/team' => 'pages#team', as: 'team'
+    get '/press' => 'pages#press', as: 'press'
     # root route
 
     root 'pages#index'
+    # root 'pages#team'
   end
 
   # browse resources

@@ -1,6 +1,11 @@
 - # this is how you define tags for page title & meta description
 - content_for :page_title do
   = "#{@page.title} - #{@page.subtitle}"
+%div.appLinks
+  %a.appstore{:href => "https://itunes.apple.com/app/kazimir/id995212413"}
+    = image_tag "appstore.svg"
+  %a.googlestore{:href => "https://play.google.com/store/apps/details?id=pl.kazimirapp"}
+    = image_tag "google_store_small.png"
 - content_for :page_description do
   = @page.introduction
 - content_for :hero do
@@ -37,6 +42,6 @@
       %a{:href => "http://kazimierzkrakow.org/", :target => "_blank"}
         = image_tag "kuzmir_1.jpg"
       %p.link-subtitle
-        = t('.photos_from_susanne')      
+        = t('.photos_from_susanne')
 
 / = render partial: 'pages/partials/team'

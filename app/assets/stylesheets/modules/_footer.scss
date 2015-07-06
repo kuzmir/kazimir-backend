@@ -49,11 +49,21 @@ ul.copyright {
 	list-style: none;
 	padding-left: 0;
 }
-@media(max-width: $screen-sm-max) {
-	.appLinkFooter {
-		display: none;
+.appLinkFooter {
+	position: relative;
+  top: 15px;
+	&.appstore {
+	  left: 10px;
+	}
+	&.googlestore {
+		right: 10px;
 	}
 }
+// @media(max-width: $screen-sm-max) {
+// 	.appLinkFooter {
+// 		display: none;
+// 	}
+// }
 @media(min-width: $screen-xs-max) {
 	.appLinkMobile {
 		display: none;

@@ -18,6 +18,7 @@
     = render 'layouts/shared/header'
     - if content_for? :hero
       = yield :hero
+    = render partial: 'pages/partials/flip'
     %div#main
       = yield
     = render 'layouts/shared/footer'

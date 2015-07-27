@@ -1,0 +1,49 @@
+- # this is how you define tags for page title & meta description
+- content_for :page_title do
+  = "Kazimir"
+%div.appLinks
+  %a.appstore{:href => "https://itunes.apple.com/app/kazimir/id995212413"}
+    = image_tag "appstore.svg"
+  %a.googlestore{:href => "https://play.google.com/store/apps/details?id=pl.kazimirapp"}
+    = image_tag "google_store_small.png"
+  = render partial: 'pages/partials/flip'
+
+%section.page-intro
+  %header.major
+    %p.subtitle Opowieść o dwóch kulturach na krakowskim Kazimierzu
+
+  %div.intro-content
+    %p Przewodnik Kazimir to aplikacja mobilna, która daje Ci możliwość szczegółowego poznania historycznej żydowskiej dzielnicy Krakowa. Pochłonie cię nieznany świat – pełen legend, zdarzeń i osób – który kształtował tożsamość Krakowian przez wieki oraz ten współczesny, który zaskoczy Cię i zainspiruje. Przed Tobą wyjątkowa podróż w czasie.
+    %p Jeśli chcesz wiedzieć co nowego planujemy w najbliższym czasie, zostaw nam swój adres a damy Ci znać o aktualizacjach Kazimira.
+    = render partial: 'pages/partials/mailchimp'
+
+%section.page-content
+  %h3 Aplikacja
+  %p Pobierasz aplikację (iOS/Android) całkowicie za darmo i idziesz na spacer. Kazimir dostarcza Ci informacji, pokazuje ciekawe miejsca i ułatwia poruszanie się po Kazimierzu, dzięki interaktywnej mapie. Przewodnik jest stworzony dla ludzi ciekawych wszystkiego, bez względu na wiek, religię czy rozmiar stopy.
+  %h3 Idea
+  %p Społeczny cel tego projektu Kazimir to pokazanie korelacji żydowskiej i polskiej kultury na przestrzeni wieków. Zebranie w jednym miejscu informacji z przedwojennego i współczesnego życia dzielnicy ma zachęcać mieszkańców Krakowa, aby zainteresowali się historią, związaną z miejscami odwiedzanymi na co dzień.
+  %p Chcemy, by Polacy poznali żydowską przeszłość Kazimierza, natomiast Żydzi jego współczesne oblicze. W części przedwojennej Kazimira wprowadziliśmy odwrotną nawigację – od prawej do lewej, co nawiązuje do kierunku czytania języka hebrajskiego. Celem jest łączenie ludzi różnych narodowości, wyznań, kultur.
+  %h3 Logotyp
+  %p Logotyp oparty na kształcie dzielnicy, przypominający hebrajską literę BETA, odzwierciedla dwie kultury, religie i narody. Symbol DOMU, który niesie ze sobą BETA nawiązuje do swobodnej, bezpretensjonalnej atmosfery Kazimierza, a także jego niewątpliwej gościnności.
+
+%section.links-section.page-content
+  %header.section-title
+    %h4= t('.links')
+  %div.row
+    %div.col-sm-4.col-xs-12.link-image
+      %a{:href => "https://www.dropbox.com/s/zy3bdtld41qy6bw/KAZIMIERZ_prez.pdf?dl=0", :target => "_blank"}
+        = image_tag "poster3.jpg"
+      %p.link-subtitle
+        = t('.visual_identity_of_the_district')
+    %div.col-sm-4.col-xs-12.link-image
+      %a{:href => "https://www.dropbox.com/s/on0pc6o54zswzkx/Emilia_Maj_plakaty_zydowskie_1918-1939.pdf?dl=0", :target => "_blank"}
+        = image_tag "poster2.png"
+      %p.link-subtitle
+        = t('.polish_jewish_posters')
+    %div.col-sm-4.col-xs-12.link-image
+      %a{:href => "http://kazimierzkrakow.org/", :target => "_blank"}
+        = image_tag "kuzmir_1.jpg"
+      %p.link-subtitle
+        = t('.photos_from_susanne')
+
+/ = render partial: 'pages/partials/team'

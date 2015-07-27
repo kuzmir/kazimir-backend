@@ -1,3 +1,12 @@
+- # this is how you define tags for page title & meta description
+- content_for :page_title do
+  = "Kazimir"
+%div.appLinks
+  %a.appstore{:href => "https://itunes.apple.com/app/kazimir/id995212413"}
+    = image_tag "appstore.svg"
+  %a.googlestore{:href => "https://play.google.com/store/apps/details?id=pl.kazimirapp"}
+    = image_tag "google_store_small.png"
+  = render partial: 'pages/partials/flip'
 #modal-1.md-modal.md-effect-5
   .md-content
     %div.row
@@ -32,7 +41,10 @@
         = image_tag "j_kr.jpg"
       %div.col-sm-4.full-text
         %h3 Jan Kraus
-        %p Na codzien frontend developer i team leader w creativestyle. Po godzinach programuje startupy w ruby on rails, biega po górach i robi zdjęcia. Pasjonują go podróże i nowe technologie. 
+        %p
+          Na codzien frontend developer i team leader w
+          %a{:href => "http://www.creativestyle.pl/", :target => "_blank"} creativestyle.
+          Po godzinach programuje startupy w ruby on rails, biega po górach i robi zdjęcia. Pasjonują go podróże i nowe technologie.
       %button.md-close X
 #modal-5.md-modal.md-effect-5
   .md-content
@@ -70,15 +82,6 @@
         %h3 Wiktoria Dalach
         %p Programistka i fotografka. Aby poprawiać nastrój sprzedawcom i urzędnikom, założyła firmę Jest Super. Eksploruje miejskie podwórka. Chętnie śpiewa piosenki, choć nie pamięta ich tekstów. Lubi ludzi, ładne linie i sztukę współczesną. Jest autorką zdjęć zespołu Kazimira.
       %button.md-close X
-/ #modal-9.md-modal.md-effect-5
-/   .md-content
-/     %div.row
-/       %div.col-sm-8.full-image
-/         = image_tag "j_luc.jpg"
-/       %div.col-sm-4.full-text
-/         %h3 Joanna Łuczyńska
-/         %p Projektantka graficzna, która zawsze dba o to, żeby każdy design był zarazem estetyczny i funkcjonalny.Uwielbia piękne wzory i tekstury. Z wykształcenia psycholog. W wolnym czasie okupuje kuchnię, ćwiczy oraz kocha wszystkie kotki.
-/       %button.md-close X
 #modal-9.md-modal.md-effect-5
   .md-content
     %div.row
@@ -95,7 +98,10 @@
         = image_tag "b_paw.jpg"
       %div.col-sm-4.full-text
         %h3 Bartek Pawlik
-        %p Zajmuje się fotografią zawodowo i hobbystycznie: http://bartpawlik.tumblr.com/ Jego marzeniem jest popatrzeć na świat oczami kogoś innego dlatego nieustannie i obsesyjnie szuka innej perspektywy. Każdą sekundę wypełnia obserwacją i nigdy się tym nie nudzi. W wolnych chwilach uprawia narciarski freeride i jeździ na ostrym kole.
+        %p
+          Zajmuje się fotografią zawodowo i hobbystycznie:
+          %a{:href => "http://bartpawlik.tumblr.com/", :target => "_blank"} http://bartpawlik.tumblr.com/ .
+          Jego marzeniem jest popatrzeć na świat oczami kogoś innego dlatego nieustannie i obsesyjnie szuka innej perspektywy. Każdą sekundę wypełnia obserwacją i nigdy się tym nie nudzi. W wolnych chwilach uprawia narciarski freeride i jeździ na ostrym kole.
       %button.md-close X
 
 %section.links-section
@@ -125,7 +131,7 @@
         = image_tag "k_tw_p.jpg"
     %div.col-sm-4.col-xs-12.link-image
       %button.md-trigger{"data-modal" => "modal-8"}
-        = image_tag "w_dal_p.jpg"   
+        = image_tag "w_dal_p.jpg"
     %div.col-sm-4.col-xs-12.link-image
       %button.md-trigger{"data-modal" => "modal-9"}
         = image_tag "a_byw_p.jpg"

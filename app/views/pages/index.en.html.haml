@@ -1,0 +1,49 @@
+- # this is how you define tags for page title & meta description
+- content_for :page_title do
+  = "Kazimir"
+%div.appLinks
+  %a.appstore{:href => "https://itunes.apple.com/app/kazimir/id995212413"}
+    = image_tag "appstore.svg"
+  %a.googlestore{:href => "https://play.google.com/store/apps/details?id=pl.kazimirapp"}
+    = image_tag "google_store_small.png"
+  = render partial: 'pages/partials/flip'
+
+%section.page-intro
+  %header.major
+    %p.subtitle A tale of two cultures on Kazimierz in Kraków
+
+  %div.intro-content
+    %p The Kazimir guide is a mobile app, that allows you to learn about the historical part of Cracow. You will be immersed in the unknown - legends, events and people - that have shaped the identity of the people of Cracow for centuries as well as current Kazimierz that will surprise and inspire you. A unique journey through time ahead!
+    %p If you would like to be up to date, subscribe to our newsletter and we will let you know about Kazimir's new features
+    = render partial: 'pages/partials/mailchimp'
+
+%section.page-content
+  %h3 Application
+  %p Get the iOS/Android free app and go for a walk. Kazimir gives you information, shows interesting places and makes walking through Kazimierz easier, on an interactive map. The guide is for people that are curious, regardless of the age, religion or foot size.
+  %h3 Idea
+  %p The social purpose of the Kazimir project is to show the correlation of Jewish and Polish cultures throughout centuries. Information about pre-war and current life of the Kazimierz district is supposed to encourage the citizens of Cracow to get interested in history of the places they visit day to day.
+  %p We want the Poles to know the Jewish history of Kazimierz and for Jews to know its’ current state. In the pre-war part of Kazimir we created a reverse navigation - from right to left, that corresponds to the reading direction of Hebrew. The goal is to connect people of different nationalities, religions and cultures.
+  %h3 Logo
+  %p The logo is based on the shape of the district, resembling the Hebrew letter BETA, reflects two cultures, religions and nations. Being a symbol of HOME it relates to the easy, non-pretentious atmosphere of Kazimierz as well as its’ undisputed hospitality.
+
+%section.links-section.page-content
+  %header.section-title
+    %h4= t('.links')
+  %div.row
+    %div.col-sm-4.col-xs-12.link-image
+      %a{:href => "https://www.dropbox.com/s/zy3bdtld41qy6bw/KAZIMIERZ_prez.pdf?dl=0", :target => "_blank"}
+        = image_tag "poster3.jpg"
+      %p.link-subtitle
+        = t('.visual_identity_of_the_district')
+    %div.col-sm-4.col-xs-12.link-image
+      %a{:href => "https://www.dropbox.com/s/on0pc6o54zswzkx/Emilia_Maj_plakaty_zydowskie_1918-1939.pdf?dl=0", :target => "_blank"}
+        = image_tag "poster2.png"
+      %p.link-subtitle
+        = t('.polish_jewish_posters')
+    %div.col-sm-4.col-xs-12.link-image
+      %a{:href => "http://kazimierzkrakow.org/", :target => "_blank"}
+        = image_tag "kuzmir_1.jpg"
+      %p.link-subtitle
+        = t('.photos_from_susanne')
+
+/ = render partial: 'pages/partials/team'

@@ -4,12 +4,12 @@
 
   %nav.navigation
     - if params[:locale] == 'en'
-      = link_to "INFO", '/'
-      = link_to "TEAM", '/team'
-      = link_to "PRESS", '/press'
+      = link_to "INFO", '/en'
+      = link_to "TEAM", '/en/team'
+      = link_to "PRESS", '/en/press'
       = link_to "PL", '/pl'
     - else
       = link_to "INFO", '/'
-      = link_to "ZESPÓŁ", '/team'
-      = link_to "PRESS", '/press'
+      = link_to "ZESPÓŁ", '/pl/team'
+      = link_to "PRESS", '/pl/press'
       = link_to "EN", '/en'

@@ -1,4 +1,13 @@
-#modal-1.md-modal.md-effect-5
+- # this is how you define tags for page title & meta description
+- content_for :page_title do
+  = "Kazimir"
+%div.appLinks
+  %a.appstore{:href => "https://itunes.apple.com/app/kazimir/id995212413"}
+    = image_tag "appstore.svg"
+  %a.googlestore{:href => "https://play.google.com/store/apps/details?id=pl.kazimirapp"}
+    = image_tag "google_store_small.png"
+  = render partial: 'pages/partials/flip'
+#modal-11.md-modal.md-effect-5
   .md-content
     %div.row
       %div.col-sm-8.full-image
@@ -7,34 +16,16 @@
         %h3 Patrycja Radaczyńska
         %p Her first love is music. Trained as a saxophonist, she's passionate about jazz and all kinds of impovisation. After falling in love with coding she now works as a front-end developer, where solving puzzles is what she likes most. Finds wandering the perfect way to relax and feels best when the landscape outside the window changes quickly. A true lover of inspiring art, technology that makes life easier and absurdity of all kinds.
       %button.md-close X
-#modal-2.md-modal.md-effect-5
+#modal-12.md-modal.md-effect-5
   .md-content
     %div.row
       %div.col-sm-8.full-image
-        = image_tag "a_byw.jpg"
+        = image_tag "e_maj.jpg"
       %div.col-sm-4.full-text
-        %h3 Ania Bywanis-Kwiecień
-        %p Trained as a lawyer, Ania decided to join the Krakow tech scene as a UI/UX designer. She currently manages the work of a few people on production of Project Kazimierz podcasts in a digital publishing house James Cook Publishing. After hours she helps with organizing TEDxKazimierz. Loves good people, good coffee and adventures that end well.
+        %h3 Emilia Maj
+        %p The designer of the artistic past and a passion for techonologii on a daily builds softwerowe products from the initial idea through to implementation . Through the non-profit projects and open source : WebMuses , RailsGirls , AfricaHackTrip trying to connect and inspire people around .
       %button.md-close X
-#modal-3.md-modal.md-effect-5
-  .md-content
-    %div.row
-      %div.col-sm-8.full-image
-        = image_tag "w_dal.jpg"
-      %div.col-sm-4.full-text
-        %h3 Wiktoria Dalach
-        %p Programmer and photographer. In order to improve the mood of retailers and government officials, she founded the company called It's Super. She explores city's backyards. Always keen to sing a song, often with no recollection of the lyrics. She likes people, nice lines and contemporary art. She is the author of Kazimir team photos.
-      %button.md-close X
-#modal-4.md-modal.md-effect-5
-  .md-content
-    %div.row
-      %div.col-sm-8.full-image
-        = image_tag "j_kr.jpg"
-      %div.col-sm-4.full-text
-        %h3 Jan Kraus
-        %p Frontend developer & team leader at creativestyle during a day. After hours, developing startups with ruby on rails. Trailrunning & photography passionate.  Dreams about travels and new technologies.
-      %button.md-close X
-#modal-5.md-modal.md-effect-5
+#modal-13.md-modal.md-effect-5
   .md-content
     %div.row
       %div.col-sm-8.full-image
@@ -43,25 +34,19 @@
         %h3 Krzysztof Cieplucha
         %p Freelance iOS developer. Technology and science-fiction geek. Runner, volunteer and music admirer after work. Wannabe rock star, race driver and astronaut. :)
       %button.md-close X
-#modal-6.md-modal.md-effect-5
+#modal-14.md-modal.md-effect-5
   .md-content
     %div.row
       %div.col-sm-8.full-image
-        = image_tag "p_mle.jpg"
+        = image_tag "j_kr.jpg"
       %div.col-sm-4.full-text
-        %h3 Piotr Mleczko
-        %p Software Devoloper in Corporation, photographer after work. Loves art, and cheap wine from supermarket.Shooting first of all for himself, secondly for Exclusive Info magazine, fashion - Wearwool, events like Startup Sprints, Social Meetups, Tedx conference. His first exhibition is a fact, hope to have more in future.
+        %h3 Jan Kraus
+        %p
+          Frontend developer & team leader at
+          %a{:href => "http://www.creativestyle.pl/", :target => "_blank"} creativestyle
+          during a day. After hours, developing startups with ruby on rails. Trailrunning & photography passionate.  Dreams about travels and new technologies.
       %button.md-close X
-#modal-7.md-modal.md-effect-5
-  .md-content
-    %div.row
-      %div.col-sm-8.full-image
-        = image_tag "k_tw.jpg"
-      %div.col-sm-4.full-text
-        %h3 Katarzyna Twardak
-        %p A true lover of dogs, homemade cakes and books written from right to left. Those written the other way round she likes as well. Money earned during long hours in front of the computer she likes to spend on tickets - plane tickets, train tickets, concert and festival tickets.
-      %button.md-close X
-#modal-8.md-modal.md-effect-5
+#modal-15.md-modal.md-effect-5
   .md-content
     %div.row
       %div.col-sm-8.full-image
@@ -70,48 +55,86 @@
         %h3 Marta Świtała
         %p Slave of Her Passions :) Professionally hotelier and event coordinator, got her MA in Middle Eastern Studies. Fan of flavours, fragrances and absurd of everyday life. Believes that „different” is enriching and inspiring. Like telling stories about other cultures and religions, to the kids especially. Travels and sometimes blogs about it. Always courious.
       %button.md-close X
-#modal-9.md-modal.md-effect-5
+#modal-16.md-modal.md-effect-5
   .md-content
     %div.row
       %div.col-sm-8.full-image
-        = image_tag "j_luc.jpg"
+        = image_tag "p_mle.jpg"
       %div.col-sm-4.full-text
-        %h3 Joanna Łuczyńska
-        %p Projektantka graficzna, która zawsze dba o to, żeby każdy design był zarazem estetyczny i funkcjonalny.Uwielbia piękne wzory i tekstury. Z wykształcenia psycholog. W wolnym czasie okupuje kuchnię, ćwiczy oraz kocha wszystkie kotki.
+        %h3 Piotr Mleczko
+        %p Software Devoloper in Corporation, photographer after work. Loves art, and cheap wine from supermarket.Shooting first of all for himself, secondly for Exclusive Info magazine, fashion - Wearwool, events like Startup Sprints, Social Meetups, Tedx conference. His first exhibition is a fact, hope to have more in future.
+      %button.md-close X
+#modal-17.md-modal.md-effect-5
+  .md-content
+    %div.row
+      %div.col-sm-8.full-image
+        = image_tag "k_tw.jpg"
+      %div.col-sm-4.full-text
+        %h3 Katarzyna Twardak
+        %p A true lover of dogs, homemade cakes and books written from right to left. Those written the other way round she likes as well. Money earned during long hours in front of the computer she likes to spend on tickets - plane tickets, train tickets, concert and festival tickets.
+      %button.md-close X
+#modal-18.md-modal.md-effect-5
+  .md-content
+    %div.row
+      %div.col-sm-8.full-image
+        = image_tag "w_dal.jpg"
+      %div.col-sm-4.full-text
+        %h3 Wiktoria Dalach
+        %p Programmer and photographer. In order to improve the mood of retailers and government officials, she founded the company called It's Super. She explores city's backyards. Always keen to sing a song, often with no recollection of the lyrics. She likes people, nice lines and contemporary art. She is the author of Kazimir team photos.
+      %button.md-close X
+#modal-19.md-modal.md-effect-5
+  .md-content
+    %div.row
+      %div.col-sm-8.full-image
+        = image_tag "a_byw.jpg"
+      %div.col-sm-4.full-text
+        %h3 Ania Bywanis-Kwiecień
+        %p Trained as a lawyer, Ania decided to join the Krakow tech scene as a UI/UX designer. She currently manages the work of a few people on production of Project Kazimierz podcasts in a digital publishing house James Cook Publishing. After hours she helps with organizing TEDxKazimierz. Loves good people, good coffee and adventures that end well.
+      %button.md-close X
+#modal-20.md-modal.md-effect-5
+  .md-content
+    %div.row
+      %div.col-sm-8.full-image
+        = image_tag "b_paw.jpg"
+      %div.col-sm-4.full-text
+        %h3 Bartek Pawlik
+        %p
+          He works with photography professionals and hobby :
+          %a{:href => "http://bartpawlik.tumblr.com/", :target => "_blank"} just have a look here.
+          His dream is to look at the world through the eyes of someone else so constantly and obsessively looking for another perspective. Fills every second of observation and he never gets bored . In her free time practicing freeride skiing and riding on a fixie.
       %button.md-close X
 %section.links-section
   %header.section-title
     %h4= t('.team')
   %div.row
     %div.col-sm-4.col-xs-12.link-image
-      %button.md-trigger{"data-modal" => "modal-1"}
+      %button.md-trigger{"data-modal" => "modal-11"}
         = image_tag "p_rad_p.jpg"
     %div.col-sm-4.col-xs-12.link-image
-      %button.md-trigger{"data-modal" => "modal-2"}
+      %button.md-trigger{"data-modal" => "modal-12"}
         = image_tag "e_maj_p.jpg"
     %div.col-sm-4.col-xs-12.link-image
-      %button.md-trigger{"data-modal" => "modal-3"}
+      %button.md-trigger{"data-modal" => "modal-13"}
         = image_tag "krzysiek_p.jpg"
     %div.col-sm-4.col-xs-12.link-image
-      %button.md-trigger{"data-modal" => "modal-4"}
+      %button.md-trigger{"data-modal" => "modal-14"}
         = image_tag "j_kr_p.jpg"
     %div.col-sm-4.col-xs-12.link-image
-      %button.md-trigger{"data-modal" => "modal-5"}
+      %button.md-trigger{"data-modal" => "modal-15"}
         = image_tag "m_sw_p.jpg"
     %div.col-sm-4.col-xs-12.link-image
-      %button.md-trigger{"data-modal" => "modal-6"}
+      %button.md-trigger{"data-modal" => "modal-16"}
         = image_tag "p_mle_p.jpg"
     %div.col-sm-4.col-xs-12.link-image
-      %button.md-trigger{"data-modal" => "modal-7"}
+      %button.md-trigger{"data-modal" => "modal-17"}
         = image_tag "k_tw_p.jpg"
     %div.col-sm-4.col-xs-12.link-image
-      %button.md-trigger{"data-modal" => "modal-8"}
-        = image_tag "w_dal_p.jpg"   
+      %button.md-trigger{"data-modal" => "modal-18"}
+        = image_tag "w_dal_p.jpg"
     %div.col-sm-4.col-xs-12.link-image
-      %button.md-trigger{"data-modal" => "modal-9"}
+      %button.md-trigger{"data-modal" => "modal-19"}
         = image_tag "a_byw_p.jpg"
     %div.col-sm-4.col-xs-12.link-image
-      %button.md-trigger{"data-modal" => "modal-10"}
+      %button.md-trigger{"data-modal" => "modal-20"}
         = image_tag "b_paw_p.jpg"
-
 .md-overlay

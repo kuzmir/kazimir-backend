@@ -45,5 +45,6 @@
         = image_tag "kuzmir_1.jpg"
       %p.link-subtitle
         = t('.photos_from_susanne')
-
-/ = render partial: 'pages/partials/team'
+%section.creative-commons
+  %a{:href => "http://creativecommons.org/licenses/by-nc-sa/4.0/", :rel => "license", :target => "_blank"}
+    = image_tag "by-nc.svg"

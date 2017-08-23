@@ -3,7 +3,10 @@ class StreetsController < ApplicationController
     @streets = Street.all
     respond_to do |format|
       format.html # index.html.erb
-      format.json
+      format.json {
+        response.headers['Access-Control-Allow-Origin'] = '*'
+        render :json => @streets
+      }
     end
   end
 
@@ -11,7 +14,10 @@ class StreetsController < ApplicationController
     @street = Street.find(params[:id])
     respond_to do |format|
       format.html
-      format.json
+      format.json {
+        response.headers['Access-Control-Allow-Origin'] = '*'
+        render :json => @street
+      }
     end
   end
 end

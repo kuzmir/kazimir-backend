@@ -1,8 +1,8 @@
 json.array! @streets do |s|
 
   json.id s.id
-
   json.name s.name
+
   ## returned as GeoJSON
   json.path do
     json.type "LineString"

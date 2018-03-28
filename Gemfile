@@ -44,13 +44,13 @@ gem 'redcarpet'
 gem 'flutie'
 
 # Rails i18n locales
-gem 'rails-i18n', '~> 4.0.0'
+gem 'rails-i18n', '~> 4.0'
 
 # Single table translations via Traco: https://github.com/barsoom/traco
 gem 'traco'
 
 # Attachments with Paperclip: https://github.com/thoughtbot/paperclip
-gem 'paperclip', '~> 4.2'
+gem 'paperclip', '~> 6.0'
 
 group :development do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
